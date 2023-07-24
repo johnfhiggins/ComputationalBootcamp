@@ -1,0 +1,15 @@
+syllabus
+course-description
+outcomes
+methods
+homeworks-and-grading
+resources
+schedule
+week-1-introduction-to-computation-and-julia
+week-2-numerical-methods
+week-3-advanced-topics
+week-4-dynamic-programming
+misconduct-statement
+grievance-procedure
+accommodations-for-students-with-disabilities
+diversity-and-inclusion
