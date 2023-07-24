@@ -3,15 +3,11 @@ title: "Ph.D. Computation Camp"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
-url: your book url like https://kevinghunt.github.io
-# cover-image: path to the social sharing image like images/cover.jpg
+url: https://kevinghunt.github.io/ComputationCamp
 description: |
-
-  This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::gitbook,
-  set in the _output.yml file.
+  This is the class page for the UW-Madison Computation Camp for PhD students. 
 link-citations: yes
-github-repo: rstudio/bookdown-demo
+github-repo: kevinghunt/ComputationCamp
 ---
 
 # Syllabus 
@@ -78,7 +74,7 @@ This is not a real class, so you will not receive course credit, this will not s
 ## Schedule
 
 - [Homework 0](https://kevinghunt.github.io/ComputationCamp/homeworks/homework0.html): Not graded
-  - I made the following recording to help walk you through the set-up [(link)](https://uwmadison.zoom.us/rec/share/YhAbY7pjYTjU9IQcHbkOvMgeh7vr3TMKCmZTtx7jZwkm9eE5yq9qdpdQFGoGZSS5._sxKQuIJDuQ_QktU?startTime=1689710534000)
+  - I made the following recording to help walk you through the set-up [(link)]()
   - It would be best to install Julia and a code editor such as VS code before the first lecture. 
   - You will need to install Git and do the rest of the assignment before submitting Homework 1.
 
