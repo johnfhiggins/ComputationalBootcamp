@@ -77,7 +77,7 @@ This is not a real class, so you will not receive course credit, this will not s
 
 ## Schedule
 
-- [Homework 0](https://kevinghunt.github.io/ComputationCamp/homework/homework0.html): Not graded
+- [Homework 0](https://kevinghunt.github.io/ComputationCamp/homeworks/homework0.html): Not graded
   - I made the following recording to help walk you through the set-up [(link)](https://uwmadison.zoom.us/rec/share/YhAbY7pjYTjU9IQcHbkOvMgeh7vr3TMKCmZTtx7jZwkm9eE5yq9qdpdQFGoGZSS5._sxKQuIJDuQ_QktU?startTime=1689710534000)
   - It would be best to install Julia and a code editor such as VS code before the first lecture. 
   - You will need to install Git and do the rest of the assignment before submitting Homework 1.
