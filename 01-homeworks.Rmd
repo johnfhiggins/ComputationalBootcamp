@@ -5,7 +5,7 @@
     - I made the following recording to help walk you through the set-up [(link)](https://uwmadison.zoom.us/rec/share/SbHWe_IMXFEaNy6ujwbKphJ2r3TgOvHtJqpkHT17NZDpX7cXcMdZhQtfmoC-WGNI.iN1B20YE_uH-QuFT?startTime=1690209565000)
     - It would be best to install Julia and a code editor such as VS code before the first lecture. 
     - You will need to install Git and do the rest of the assignment before submitting Homework 1.
-- Homework 1, Due August 9
+- [Homework 1](https://kevinghunt.github.io/ComputationCamp/homeworks/homework1.html), Due August 9
 - Homework 2, Due August 16
 - Homework 3, Due August 23
 - Homework 4, Due August 30
