@@ -1,3 +1,4 @@
 # Code Alongs
 
 - [Code Along 1](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong1.jl)
+- [Code Along 2](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong2.jl)

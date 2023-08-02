@@ -3223,7 +3223,36 @@ slide:not(.current) .plotly.html-widget{
 <li>Efficient machine code can also be generated if you follow best practices.</li>
 </ul>
 
-<p><a href='https://docs.julialang.org/en/v1/manual/performance-tips/' title=''>https://docs.julialang.org/en/v1/manual/performance-tips/</a></p></article></slide>
+<p><a href='https://docs.julialang.org/en/v1/manual/performance-tips/' title=''>https://docs.julialang.org/en/v1/manual/performance-tips/</a></p>
+
+</article></slide><slide class=""><hgroup><h2>Optimal Investment Problem</h2></hgroup><article  id="optimal-investment-problem">
+
+<ul>
+<li>Given a capital \(k\), we have resources: \[
+y = k^\alpha + (1-\delta)k.
+\]</li>
+<li>We live forever and we discount future at rate \(\beta\). Utility from consumption is \(\log(c)\).<br/></li>
+<li>We need to decide how much to consume \(c\) and how much capital to save \(k&#39;\).</li>
+</ul>
+
+<p>\[
+V(k) = \max_{c,k&#39;} \:\:\: \log(c) + \beta V(k&#39;).
+\] \[
+c + k&#39; = k^\alpha + (1-\delta)k.
+\]</p>
+
+</article></slide><slide class=""><hgroup><h2>Solving for V</h2></hgroup><article  id="solving-for-v">
+
+<ul>
+<li>We know that this is a contraction mapping, so we can iterate over \(V\) until convergence.</li>
+<li>Guess \(V_1\). Solve</li>
+</ul>
+
+<p>\[
+V_2(k) = \max_{c,k&#39;} \:\:\: \log(c) + \beta V_1(k&#39;).
+\] - Then: \[
+V_3(k) = \max_{c,k&#39;} \:\:\: \log(c) + \beta V_2(k&#39;).
+\] - We know that \(V_n \xrightarrow{} V\) as \(n \xrightarrow{} \infty\).</p></article></slide>
 
 
   <slide class="backdrop"></slide>
