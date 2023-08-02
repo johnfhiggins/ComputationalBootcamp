@@ -15,4 +15,5 @@ accommodations-for-students-with-disabilities
 diversity-and-inclusion
 homeworks
 lectures
+week-1-introduction-to-computation-and-julia-1
 code-alongs
