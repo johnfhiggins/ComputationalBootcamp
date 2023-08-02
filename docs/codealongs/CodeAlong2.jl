@@ -263,7 +263,7 @@ using Parameters
 end
 
 
-struct ModelSolutions
+@with_kw struct ModelSolutions
 
     V::Vector{Float64}
     kp::Vector{Float64}
@@ -315,11 +315,11 @@ function bellman(para, sols)
                     max_util = V_temp
                     kp_next[i_k] = k_grid[i_kp]
                 end
-                V_next[i_k] = max_util
+                
             end
 
         end
-
+        V_next[i_k] = max_util
     end
 
     return V_next, kp_next
@@ -342,18 +342,20 @@ function solve_model(para, sols)
         V_next, kp_next = bellman(para,sols)
         
         max_diff = maximum(abs.(V_next - V))
-        V .= V_next
-        kp .= kp_next
+        sols.V .= V_next
+        sols.kp .= kp_next
 
         @show n, max_diff
 
     end
 
+    sols
+
 end
 
 para, sols = build_structs();
 
-@time solve_model(para,sols)
+@time sols = solve_model(para,sols)
  
 
 using Plots
