@@ -22,7 +22,9 @@ github-repo: kevinghunt/ComputationCamp
 
 **Location:** Social Sciences Room 7142 (Morton Room) and [Zoom](https://uwmadison.zoom.us/j/93415370734?pwd=V1l1TmdmV2lYYUNkTk5rQmdiZU9Wdz09).
 
+## Acknowledgements
 
+Many thanks to [Garrett Anstreicher](https://www.garrettanstreicher.com/), who taught this camp a few times before me. Most of the material and class structure was made by him. I have added a few things, and learned a lot from people/sites mentioned under resources.  
 
 ## Course Description 
 
@@ -69,6 +71,7 @@ This is not a real class, so you will not receive course credit, this will not s
 - Benjamin Vatter's Coding Primer (Python) https://benjaminvatter.com/uploads/coding_prep.pdf
 - Gentzkow and Shapiro's Practioner Guide (Best Practice for Coding and Data) https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf
 - Derivate packages in Julia: https://juliadiff.org/ 
+- Distributed Computing Tutorials: https://enccs.github.io/julia-for-hpc/motivation/
 
 
 ## Schedule
@@ -118,7 +121,6 @@ This is not a real class, so you will not receive course credit, this will not s
   - Slides
   - Code-along
   - Recording
-
 
 - **Homework 3:** Due Wednesday August 23. 
 
