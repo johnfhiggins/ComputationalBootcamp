@@ -94,11 +94,11 @@ This is not a real class, so you will not receive course credit, this will not s
   
 - [Homework 1:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework1.html) Due Wednesday August 9. 
 
-### Week 2: Numerical Methods
+### Week 2: Numeric Methods
 
 - **Lecture 3:** Numeric Optimization 
-  - Slides
-  - Code-along
+  - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture3.html)
+  - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong3.jl)
   - Recording
 - **Lecture 4:** Interpolation
   - Slides
@@ -106,7 +106,7 @@ This is not a real class, so you will not receive course credit, this will not s
   - Recording
 
 
-- **Homework 2:** Due Wednesday August 16. 
+- [Homework 2:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework2.html) Due Wednesday August 16. 
 
 ### Week 3: Advanced Topics
 

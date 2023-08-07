@@ -6,7 +6,7 @@ homeworks-and-grading
 resources
 schedule
 week-1-introduction-to-computation-and-julia
-week-2-numerical-methods
+week-2-numeric-methods
 week-3-advanced-topics
 week-4-dynamic-programming
 misconduct-statement
@@ -16,4 +16,5 @@ diversity-and-inclusion
 homeworks
 lectures
 week-1-introduction-to-computation-and-julia-1
+week-2-numeric-methods-1
 code-alongs
