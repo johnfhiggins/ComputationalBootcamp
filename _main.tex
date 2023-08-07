@@ -1,0 +1,498 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Ph.D.~Computation Camp},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+
+\title{Ph.D.~Computation Camp}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{syllabus}{%
+\chapter{Syllabus}\label{syllabus}}
+
+\textbf{Instructor:} Kevin Hunt, \href{mailto:kghunt@wisc.edu}{\nolinkurl{kghunt@wisc.edu}}.
+
+\textbf{Dates:} July 31 to August 23, 2023.
+
+\textbf{Lectures:} Monday and Wednesday, 1:30 to 2:45pm.
+
+\textbf{Office Hours:} Monday and Wednesday, 2:45 to 3:45pm.
+
+\textbf{Location:} Social Sciences Room 7142 (Morton Room) and \href{https://uwmadison.zoom.us/j/93415370734?pwd=V1l1TmdmV2lYYUNkTk5rQmdiZU9Wdz09}{Zoom}.
+
+\hypertarget{course-description}{%
+\section{Course Description}\label{course-description}}
+
+This four-week course quickly familiarizes students with computational methods with an emphasis on applications in Economics. By the end of the course, students will learn what is computation, how it applies in Economics, and how to do it. The course will be taught in the Julia programming language. Rising second year PhD students are the target audience, but all are welcome to attend.
+
+\hypertarget{outcomes}{%
+\section{Outcomes}\label{outcomes}}
+
+\begin{itemize}
+\tightlist
+\item
+  Learn computation methods for structural modelling and non-standard estimation in Economics.
+\item
+  Understand best practices for programming, performance, and version control.
+\item
+  Obtain proficiency in Julia programming language.
+\item
+  Introduce students to resources for computation available at UW-Madison, especially the SSCC.
+\end{itemize}
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Lectures}:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Summarize key topics and ideas in slide presentation.
+  \item
+    Provide examples through interactive code-alongs
+  \end{itemize}
+\item
+  \textbf{Weekly homeworks} create a structured environment for practice and learning.
+\item
+  \textbf{Office hours} provide opportunity for help and support.
+\end{itemize}
+
+\hypertarget{homeworks-and-grading}{%
+\section{Homeworks and ``Grading''}\label{homeworks-and-grading}}
+
+Weekly homeworks will require students to execute a variety of tasks using Julia. Problem sets are to be submitted via Github as explained in Homework 0. I will post solutions to the homeworks and ``grade'' all on-time submissions.
+
+Your ``final grade'' will be a function of the homework ``grades''.
+
+Students are encouraged to discuss the homeworks with each other, although each student must write their own code and solutions. \textbf{Please indicate in your submission who you discussed the homework with if anyone.}
+
+This is not a real class, so you will not receive course credit, this will not show up on your transcript, and \textbf{no faculty will see your grades.}
+
+\hypertarget{resources}{%
+\section{Resources}\label{resources}}
+
+\begin{itemize}
+\tightlist
+\item
+  Documentation for the Julia language is at \url{https://docs.julialang.org/en/v1/}.
+\item
+  Quant Econ (Julia and Python) \url{https://quantecon.org/}.
+\item
+  Jesus Fernandez-Villaverde's teaching page (Julia and much else) \url{https://www.sas.upenn.edu/~jesusfv/teaching.html}
+\item
+  Florian Oswald's teaching page (Julia and R) \url{https://floswald.github.io/\#teaching}
+\item
+  Benjamin Vatter's Coding Primer (Python) \url{https://benjaminvatter.com/uploads/coding_prep.pdf}
+\item
+  Gentzkow and Shapiro's Practioner Guide (Best Practice for Coding and Data) \url{https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf}
+\item
+  Derivate packages in Julia: \url{https://juliadiff.org/}
+\end{itemize}
+
+\hypertarget{schedule}{%
+\section{Schedule}\label{schedule}}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://kevinghunt.github.io/ComputationCamp/homeworks/homework0.html}{Homework 0}: Not graded
+
+  \begin{itemize}
+  \tightlist
+  \item
+    I made the following recording to help walk you through the set-up \href{https://uwmadison.zoom.us/rec/share/SbHWe_IMXFEaNy6ujwbKphJ2r3TgOvHtJqpkHT17NZDpX7cXcMdZhQtfmoC-WGNI.iN1B20YE_uH-QuFT?startTime=1690209565000}{(link)}
+  \item
+    It would be best to install Julia and a code editor such as VS code before the first lecture.
+  \item
+    You will need to install Git and do the rest of the assignment before submitting Homework 1.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{week-1-introduction-to-computation-and-julia}{%
+\subsection{Week 1: Introduction to Computation and Julia}\label{week-1-introduction-to-computation-and-julia}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Lecture 1:} Intro to Computation and Basic Julia
+
+  \begin{itemize}
+  \item
+    \href{https://kevinghunt.github.io/ComputationCamp/lectures/Lecture1.html}{Slides}
+  \item
+    \href{https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong1.jl}{Code-along}
+  \item
+    \href{https://uwmadison.zoom.us/rec/share/YbH5nwK8MFfdrG_79ab21fIChvq_GLK2G0cj1PuRpy29LgDW2ddl46KoGUvMzWoz.uN0dl820cFXMQ54_}{Recording Part 1}
+  \item
+    \href{https://uwmadison.zoom.us/rec/share/grQK03ljFWrQB5hBKKgoAVy9BuR5hg85PgyVvQJrXqJ5olG1fCe9vh336wh_L_yH.8-wkiBg4GIsDT3eC}{Recording Part 2}
+  \item
+    \href{-\%20https://uwmadison.zoom.us/rec/share/ANmR1Qr-iDoAxMOItHY9zgQk41_bbABcPN4eD3mVE5OVLvhzcXr80yBSEjEi8Dc.V7Hy_3yeHQm84srl}{Recording}
+  \end{itemize}
+\item
+  \textbf{Lecture 2:} Performance Optimization and Advanced Julia
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://kevinghunt.github.io/ComputationCamp/lectures/Lecture2.html}{Slides}
+  \item
+    \href{https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong2.jl}{Code-along}
+  \item
+    \href{https://uwmadison.zoom.us/rec/share/ANmR1Qr-iDoAxMOItHY9zgQk41_bbABcPN4eD3mVE5OVLvhzcXr80yBSEjEi8Dc.V7Hy_3yeHQm84srl}{Recording}
+  \end{itemize}
+\item
+  \href{https://kevinghunt.github.io/ComputationCamp/homeworks/homework1.html}{Homework 1:} Due Wednesday August 9.
+\end{itemize}
+
+\hypertarget{week-2-numeric-methods}{%
+\subsection{Week 2: Numeric Methods}\label{week-2-numeric-methods}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Lecture 3:} Numeric Optimization
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://kevinghunt.github.io/ComputationCamp/lectures/Lecture3.html}{Slides}
+  \item
+    \href{https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong3.jl}{Code-along}
+  \item
+    \href{https://uwmadison.zoom.us/rec/share/xD1LsrLsUF8XtJUjPTVDA_2d52EKgQTF1a6Dc3lBOSB7JlRk4PMUi_h0oMRnMtb5.VW6mJ7BkoiC6riUk}{Recording}
+  \end{itemize}
+\item
+  \textbf{Lecture 4:} Interpolation
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Slides
+  \item
+    Code-along
+  \item
+    Recording
+  \end{itemize}
+\item
+  \href{https://kevinghunt.github.io/ComputationCamp/homeworks/homework2.html}{Homework 2:} Due Wednesday August 16.
+\end{itemize}
+
+\hypertarget{week-3-advanced-topics}{%
+\subsection{Week 3: Advanced Topics}\label{week-3-advanced-topics}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Lecture 5:} Numeric Integration
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Slides
+  \item
+    Code-along
+  \item
+    Recording
+  \end{itemize}
+\item
+  \textbf{Lecture 6:} Parallelization and UW Resources
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Slides
+  \item
+    Code-along
+  \item
+    Recording
+  \end{itemize}
+\item
+  \textbf{Homework 3:} Due Wednesday August 23.
+\end{itemize}
+
+\hypertarget{week-4-dynamic-programming}{%
+\subsection{Week 4: Dynamic Programming}\label{week-4-dynamic-programming}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Lecture 7:} Dynamic Programming
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Slides
+  \item
+    Code-along
+  \item
+    Recording
+  \end{itemize}
+\item
+  \textbf{Lecture 8:} Economic Applications
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Slides
+  \item
+    Code-along
+  \item
+    Recording
+  \end{itemize}
+\item
+  \textbf{Homework 4:} Due Wednesday August 30.
+\end{itemize}
+
+\hypertarget{misconduct-statement}{%
+\section{Misconduct Statement}\label{misconduct-statement}}
+
+Academic Integrity is critical to maintaining fair and knowledge-based learning at UW Madison. Academic dishonesty is a serious violation: it undermines the bonds of trust and honesty between members of our academic community, degrades the value of your degree and defrauds those who may eventually depend upon your knowledge and integrity.
+
+Examples of academic misconduct include, but are not limited to: cheating on an examination (copying from another student's paper, referring to materials on the exam other than those explicitly permitted, continuing to work on an exam after the time has expired, turning in an exam for regrading after making changes to the exam), copying the Homework of someone else, submitting for credit work done by someone else, stealing examinations or course materials, tampering with the grade records or with another student's work, or knowingly and intentionally assisting another student in any of the above. Students are reminded that online sources, including anonymous or unattributed ones like Wikipedia, still need to be cited like any other source; and copying from any source without attribution is considered plagiarism.
+
+The Department of Economics will deal with the offenses harshly following UWS14 procedures:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  The penalty for misconduct in most cases will be removal from the course and a failing grade.
+\item
+  The department will inform the Dean of Students as required and additional sanctions maybe applied.
+\item
+  The department will keep an internal record of misconduct incidents. This information will be made available to teaching faculty writing recommendation letters and to admission offices of the School of Business and Engineering.
+\end{enumerate}
+
+If you think you see incidents of misconduct, you should tell your instructor about them, in which case they will take appropriate action and protect your identity. You could also choose to contact our administrator Tammy Herbst-Koel (\href{mailto:therbst@wisc.edu}{\nolinkurl{therbst@wisc.edu}}) and your identity will be kept confidential.
+
+For more information, refer to \url{https://www.students.wisc.edu/doso/academic-integrity/}.
+
+\hypertarget{grievance-procedure}{%
+\section{Grievance Procedure}\label{grievance-procedure}}
+
+The Department of Economics has developed a grievance procedure through which you may register comments or complaints about a course, an instructor, or a teaching assistant. The Department continues to provide a course evaluation each semester in every class. If you wish to make anonymous complaints to an instructor or teaching assistant, the appropriate vehicle is the course evaluation. If you have a disagreement with an instructor or a teaching assistant, we strongly encourage you to try to resolve the dispute with him or her directly. The grievance procedure is designed for situations where neither of these channels is appropriate.
+
+If you wish to file a grievance, you should go to room 7238 Social Science and request a Course Comment Sheet. When completing the comment sheet, you will need to provide a detailed statement that describes what aspects of the course you find unsatisfactory. You will need to sign the sheet and provide your student identification number, your address, and a phone where you can be reached. The Department plans to investigate comments fully and will respond in writing to complaints.
+
+Your name, address, phone number, and student ID number will not be revealed to the instructor or teaching assistant involved and will be treated as confidential. The Department needs this information, because it may become necessary for a commenting student to have a meeting with the department chair or a nominee to gather additional information. A name and address are necessary for providing a written response.
+
+\hypertarget{accommodations-for-students-with-disabilities}{%
+\section{Accommodations for students with disabilities}\label{accommodations-for-students-with-disabilities}}
+
+The University of Wisconsin-Madison supports the right of all enrolled students to a full and equal educational opportunity. The Americans with Disabilities Act (ADA), Wisconsin State Statute (36.12), and UW-Madison policy (Faculty Document 1071) require that students with disabilities be reasonably accommodated in instruction and campus life. Reasonable accommodations for students with disabilities is a shared faculty and student responsibility. Students are expected to inform faculty {[}me{]} of their need for instructional accommodations by the end of the third week of the semester, or as soon as possible after a disability has been incurred or recognized. Faculty {[}I{]}, will work either directly with the student {[}you{]} or in coordination with the McBurney Center to identify and provide reasonable instructional accommodations. Disability information, including instructional accommodations as part of a student's educational record, is confidential and protected under FERPA.
+
+\hypertarget{diversity-and-inclusion}{%
+\section{Diversity and Inclusion}\label{diversity-and-inclusion}}
+
+Diversity is a source of strength, creativity, and innovation for UW-Madison. We value the contributions of each person and respect the profound ways their identity, culture, background, experience, status, abilities, and opinion enrich the university community. We commit ourselves to the pursuit of excellence in teaching, research, outreach, and diversity as inextricably linked goals.
+
+The University of Wisconsin-Madison fulfills its public mission by creating a welcoming and inclusive community for people from every background people who as students, faculty, and staff serve Wisconsin and the world.
+
+\hypertarget{homeworks}{%
+\chapter{Homeworks}\label{homeworks}}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://kevinghunt.github.io/ComputationCamp/homeworks/homework0.html}{Homework 0}, No Due Date
+
+  \begin{itemize}
+  \tightlist
+  \item
+    I made the following recording to help walk you through the set-up \href{https://uwmadison.zoom.us/rec/share/SbHWe_IMXFEaNy6ujwbKphJ2r3TgOvHtJqpkHT17NZDpX7cXcMdZhQtfmoC-WGNI.iN1B20YE_uH-QuFT?startTime=1690209565000}{(link)}
+  \item
+    It would be best to install Julia and a code editor such as VS code before the first lecture.
+  \item
+    You will need to install Git and do the rest of the assignment before submitting Homework 1.
+  \end{itemize}
+\item
+  \href{https://kevinghunt.github.io/ComputationCamp/homeworks/homework1.html}{Homework 1}, Due August 9
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Submit Link: \url{https://classroom.github.com/a/PIR0phPT}
+  \end{itemize}
+\item
+  \href{https://kevinghunt.github.io/ComputationCamp/homeworks/homework2.html}{Homework 2:} Due Wednesday August 16.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Submit Link: \url{https://classroom.github.com/a/gYCf0Llh}
+  \end{itemize}
+\item
+  Homework 3, Due August 23
+\item
+  Homework 4, Due August 30
+\end{itemize}
+
+\hypertarget{lectures}{%
+\chapter{Lectures}\label{lectures}}
+
+\hypertarget{week-1-introduction-to-computation-and-julia-1}{%
+\section{Week 1: Introduction to Computation and Julia}\label{week-1-introduction-to-computation-and-julia-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Lecture 1:} Intro to Computation and Basic Julia
+
+  \begin{itemize}
+  \item
+    \href{https://kevinghunt.github.io/ComputationCamp/lectures/Lecture1.html}{Slides}
+  \item
+    \href{https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong1.jl}{Code-along}
+  \item
+    \href{https://uwmadison.zoom.us/rec/share/YbH5nwK8MFfdrG_79ab21fIChvq_GLK2G0cj1PuRpy29LgDW2ddl46KoGUvMzWoz.uN0dl820cFXMQ54_}{Recording Part 1}
+  \item
+    \href{https://uwmadison.zoom.us/rec/share/grQK03ljFWrQB5hBKKgoAVy9BuR5hg85PgyVvQJrXqJ5olG1fCe9vh336wh_L_yH.8-wkiBg4GIsDT3eC}{Recording Part 2}
+  \item
+    \href{-\%20https://uwmadison.zoom.us/rec/share/ANmR1Qr-iDoAxMOItHY9zgQk41_bbABcPN4eD3mVE5OVLvhzcXr80yBSEjEi8Dc.V7Hy_3yeHQm84srl}{Recording}
+  \end{itemize}
+\item
+  \textbf{Lecture 2:} Performance Optimization and Advanced Julia
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://kevinghunt.github.io/ComputationCamp/lectures/Lecture2.html}{Slides}
+  \item
+    \href{https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong2.jl}{Code-along}
+  \item
+    \href{https://uwmadison.zoom.us/rec/share/ANmR1Qr-iDoAxMOItHY9zgQk41_bbABcPN4eD3mVE5OVLvhzcXr80yBSEjEi8Dc.V7Hy_3yeHQm84srl}{Recording}
+  \end{itemize}
+\item
+  \href{https://kevinghunt.github.io/ComputationCamp/homeworks/homework1.html}{Homework 1:} Due Wednesday August 9.
+\end{itemize}
+
+\hypertarget{week-2-numeric-methods-1}{%
+\section{Week 2: Numeric Methods}\label{week-2-numeric-methods-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Lecture 3:} Numeric Optimization
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \href{https://kevinghunt.github.io/ComputationCamp/lectures/Lecture3.html}{Slides}
+  \item
+    \href{https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong3.jl}{Code-along}
+  \item
+    \href{https://uwmadison.zoom.us/rec/share/xD1LsrLsUF8XtJUjPTVDA_2d52EKgQTF1a6Dc3lBOSB7JlRk4PMUi_h0oMRnMtb5.VW6mJ7BkoiC6riUk}{Recording}
+  \end{itemize}
+\item
+  \textbf{Lecture 4:} Interpolation
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Slides
+  \item
+    Code-along
+  \item
+    Recording
+  \end{itemize}
+\item
+  \href{https://kevinghunt.github.io/ComputationCamp/homeworks/homework2.html}{Homework 2:} Due Wednesday August 16.
+\end{itemize}
+
+\hypertarget{code-alongs}{%
+\chapter{Code Alongs}\label{code-alongs}}
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong1.jl}{Code Along 1}
+\item
+  \href{https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong2.jl}{Code Along 2}
+\item
+  \href{https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong2.jl}{Code Along 3}
+\end{itemize}
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}

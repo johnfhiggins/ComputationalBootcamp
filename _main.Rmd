@@ -173,3 +173,65 @@ The University of Wisconsin-Madison supports the right of all enrolled students 
 Diversity is a source of strength, creativity, and innovation for UW-Madison. We value the contributions of each person and respect the profound ways their identity, culture, background, experience, status, abilities, and opinion enrich the university community. We commit ourselves to the pursuit of excellence in teaching, research, outreach, and diversity as inextricably linked goals. 
 
 The University of Wisconsin-Madison fulfills its public mission by creating a welcoming and inclusive community for people from every background people who as students, faculty, and staff serve Wisconsin and the world.
+
+<!--chapter:end:index.Rmd-->
+
+# Homeworks
+
+
+- [Homework 0](https://kevinghunt.github.io/ComputationCamp/homeworks/homework0.html), No Due Date
+    - I made the following recording to help walk you through the set-up [(link)](https://uwmadison.zoom.us/rec/share/SbHWe_IMXFEaNy6ujwbKphJ2r3TgOvHtJqpkHT17NZDpX7cXcMdZhQtfmoC-WGNI.iN1B20YE_uH-QuFT?startTime=1690209565000)
+    - It would be best to install Julia and a code editor such as VS code before the first lecture. 
+    - You will need to install Git and do the rest of the assignment before submitting Homework 1.
+- [Homework 1](https://kevinghunt.github.io/ComputationCamp/homeworks/homework1.html), Due August 9
+    - Submit Link: https://classroom.github.com/a/PIR0phPT
+- [Homework 2:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework2.html) Due Wednesday August 16. 
+    - Submit Link: https://classroom.github.com/a/gYCf0Llh
+- Homework 3, Due August 23
+- Homework 4, Due August 30
+
+<!--chapter:end:01-homeworks.Rmd-->
+
+# Lectures
+
+## Week 1: Introduction to Computation and Julia
+
+- **Lecture 1:** Intro to Computation and Basic Julia
+  - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture1.html)
+  - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong1.jl)
+  - [Recording Part 1](https://uwmadison.zoom.us/rec/share/YbH5nwK8MFfdrG_79ab21fIChvq_GLK2G0cj1PuRpy29LgDW2ddl46KoGUvMzWoz.uN0dl820cFXMQ54_)
+  -	[Recording Part 2](https://uwmadison.zoom.us/rec/share/grQK03ljFWrQB5hBKKgoAVy9BuR5hg85PgyVvQJrXqJ5olG1fCe9vh336wh_L_yH.8-wkiBg4GIsDT3eC)
+
+  - [Recording](-	https://uwmadison.zoom.us/rec/share/ANmR1Qr-iDoAxMOItHY9zgQk41_bbABcPN4eD3mVE5OVLvhzcXr80yBSEjEi8Dc.V7Hy_3yeHQm84srl)
+- **Lecture 2:** Performance Optimization and Advanced Julia
+  - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture2.html)
+  - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong2.jl)
+  - [Recording](https://uwmadison.zoom.us/rec/share/ANmR1Qr-iDoAxMOItHY9zgQk41_bbABcPN4eD3mVE5OVLvhzcXr80yBSEjEi8Dc.V7Hy_3yeHQm84srl)
+  
+- [Homework 1:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework1.html) Due Wednesday August 9. 
+
+## Week 2: Numeric Methods
+
+- **Lecture 3:** Numeric Optimization 
+  - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture3.html)
+  - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong3.jl)
+  - [Recording](https://uwmadison.zoom.us/rec/share/xD1LsrLsUF8XtJUjPTVDA_2d52EKgQTF1a6Dc3lBOSB7JlRk4PMUi_h0oMRnMtb5.VW6mJ7BkoiC6riUk)
+- **Lecture 4:** Interpolation
+  - Slides
+  - Code-along
+  - Recording
+
+
+- [Homework 2:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework2.html) Due Wednesday August 16. 
+  
+
+<!--chapter:end:02-lectures.Rmd-->
+
+# Code Alongs
+
+- [Code Along 1](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong1.jl)
+- [Code Along 2](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong2.jl)
+- [Code Along 3](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong2.jl)
+
+<!--chapter:end:03-codealongs.Rmd-->
+
