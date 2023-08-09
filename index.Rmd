@@ -106,7 +106,7 @@ This is not a real class, so you will not receive course credit, this will not s
 - **Lecture 4:** Interpolation
   - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture4.html)
   - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong4.jl)
-  - Recording
+  - [Recording](https://uwmadison.zoom.us/rec/share/YNnLYBVpnTSQsMTHQGDDWx2n89gURdYXzVWM8dRyV4o91bAfmCkC8q1IT3f-jo3B.msXmwKB-ZcXcIZRL)
 
 
 - [Homework 2:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework2.html) Due Wednesday August 16. 
