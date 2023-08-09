@@ -24,7 +24,7 @@ github-repo: kevinghunt/ComputationCamp
 
 ## Acknowledgements
 
-Many thanks to [Garrett Anstreicher](https://www.garrettanstreicher.com/), who taught this camp a few times before me. Most of the material and class structure was made by him. I have added a few things, and learned a lot from people/sites mentioned under resources.  
+Many thanks to [Garrett Anstreicher](https://www.garrettanstreicher.com/), who taught this camp a few times before me. Most of the material and class structure was made by him. I have added a few things and learned a lot from people/sites mentioned under resources.  
 
 ## Course Description 
 
@@ -104,8 +104,8 @@ This is not a real class, so you will not receive course credit, this will not s
   - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong3.jl)
   - [Recording](https://uwmadison.zoom.us/rec/share/xD1LsrLsUF8XtJUjPTVDA_2d52EKgQTF1a6Dc3lBOSB7JlRk4PMUi_h0oMRnMtb5.VW6mJ7BkoiC6riUk)
 - **Lecture 4:** Interpolation
-  - Slides
-  - Code-along
+  - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture4.html)
+  - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong4.jl)
   - Recording
 
 

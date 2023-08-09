@@ -23,8 +23,8 @@
   - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong3.jl)
   - [Recording](https://uwmadison.zoom.us/rec/share/xD1LsrLsUF8XtJUjPTVDA_2d52EKgQTF1a6Dc3lBOSB7JlRk4PMUi_h0oMRnMtb5.VW6mJ7BkoiC6riUk)
 - **Lecture 4:** Interpolation
-  - Slides
-  - Code-along
+  - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture4.html)
+  - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong4.jl)
   - Recording
 
 
