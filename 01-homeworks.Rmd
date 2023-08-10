@@ -7,6 +7,7 @@
     - You will need to install Git and do the rest of the assignment before submitting Homework 1.
 - [Homework 1](https://kevinghunt.github.io/ComputationCamp/homeworks/homework1.html), Due August 9
     - Submit Link: https://classroom.github.com/a/PIR0phPT
+    - [Solutions](https://kevinghunt.github.io/ComputationCamp/homework_solutions/Homework1_solutions.jl)
 - [Homework 2:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework2.html) Due Wednesday August 16. 
     - Submit Link: https://classroom.github.com/a/gYCf0Llh
 - Homework 3, Due August 23
