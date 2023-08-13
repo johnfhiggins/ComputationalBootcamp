@@ -111,19 +111,21 @@ This is not a real class, so you will not receive course credit, this will not s
 
 
 - [Homework 2:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework2.html) Due Wednesday August 16. 
+    - Submit Link: https://classroom.github.com/a/gYCf0Llh
 
 ### Week 3: Advanced Topics
 
 - **Lecture 5:** Numeric Integration
-  - Slides
-  - Code-along
+  - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture5.html)
+  - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong5.jl)
   - Recording
 - **Lecture 6:** Parallelization and UW Resources
   - Slides
   - Code-along
   - Recording
 
-- **Homework 3:** Due Wednesday August 23. 
+- [Homework 3:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework3.html) Due Wednesday August 23. 
+    - Submit Link: https://classroom.github.com/a/0W6Jm9rV 
 
 ### Week 4: Dynamic Programming
 
