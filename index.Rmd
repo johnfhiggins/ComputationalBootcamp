@@ -118,7 +118,7 @@ This is not a real class, so you will not receive course credit, this will not s
 - **Lecture 5:** Numeric Integration
   - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture5.html)
   - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong5.jl)
-  - Recording
+  - [Recording](https://uwmadison.zoom.us/rec/share/Rc-Mno_HDmfyakQGBhzxhbOjYIxXkX8ka4vkksy2p5Y-lxDZCJ2x08U8ja6LzMEV.54CVfkLcQhOLID_m)
 - **Lecture 6:** Parallelization and UW Resources
   - Slides
   - Code-along
