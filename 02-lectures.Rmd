@@ -40,8 +40,8 @@
   - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong5.jl)
   - [Recording](https://uwmadison.zoom.us/rec/share/Rc-Mno_HDmfyakQGBhzxhbOjYIxXkX8ka4vkksy2p5Y-lxDZCJ2x08U8ja6LzMEV.54CVfkLcQhOLID_m)
 - **Lecture 6:** Parallelization and UW Resources
-  - Slides
-  - Code-along
+  - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture6.html)
+  - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong6.jl)
   - Recording
 
 - [Homework 3:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework3.html) Due Wednesday August 23. 
