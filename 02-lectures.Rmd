@@ -42,7 +42,7 @@
 - **Lecture 6:** Parallelization and UW Resources
   - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture6.html)
   - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong6.jl)
-  - Recording
+  - [Recording](https://uwmadison.zoom.us/rec/share/ZkkEGxop9imwlGAfhqobNSm9M5uRupUj3DqE1xGMBTo7-ZmJKzO92OSKJ5d_I7JM.KK3JK7rsgIHu7yuc)
 
 - [Homework 3:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework3.html) Due Wednesday August 23. 
     - Submit Link: https://classroom.github.com/a/0W6Jm9rV 
