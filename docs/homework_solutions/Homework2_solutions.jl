@@ -169,64 +169,70 @@ lin_approx(f, 0.0, 5.0, 6, 2.5)
 # Question 5
 ################################################################################
 
-function approx_log(grid::Vector{Float64})
-    n = length(grid)
-    func_grid = zeros(n)
+using Interpolations, Plots, Optim
+
+function approx_log(x_grid::Vector{Float64})
+    
     f(x) = log(1+x)
 
-    for i = 1:n
-        func_grid[i] = f(grid[i]) #form the approxiation of the function
-    end
+    f_grid = f.(x_grid)
 
-    grid_interp = interpolate(grid, BSpline(Linear())) #inteprolated domain
-    func_interp = interpolate(func_grid, BSpline(Linear())) #inteprolated domain
-    #func_interp = interpolate(func_grid,BSpline(Cubic(Line(OnGrid())))) #interpolated function. Swap this line with line 36 for spline interpolation
-    errs, func_approx, func_true = zeros(1001), zeros(1001), zeros(1001)
+    f_interp = LinearInterpolation(x_grid, f_grid)
 
-    for i = 0:1000 #loop
-        x = i/10 #value of x
-        findmatch(index) = abs(grid_interp(index) - x)
-        x_ind = optimize(index->findmatch(index), 1.0, n).minimizer #find index corresponding to x by calling an optimizer
-        func_approx[i+1] = func_interp(x_ind) #approximated function
-        errs[i+1] = abs(f(x) - func_interp(x_ind)) #approximation error
-        func_true[i+1] = f(x) #true value
-    end
-    errs, func_approx, func_true #return
+    f_approx = f_interp.(collect(0:1000)./10)
+
+    f_true = f.(collect(0:1000)./10)
+
+    errors = abs.(f_approx - f_true)
+
+    errors, f_approx, f_true #return
 end
 
 #initialize grids and compute approximation error
-x_grid = collect(0:0.1:100)
-grid_approx = collect((0.0:10.0:100.0))
-errs, func_approx, func_true = approx_log(grid_approx)
-sum(errs) #report total error
-plot(x_grid, errs) #plot error
+x_grid = collect(0.0:10.0:100.0)
+
+x_fine = collect(0:0.1:100.0)
+
+errors, f_approx, f_true = approx_log(x_grid)
+
+sum(abs.(errors)) #report total error
+
+plot(x_fine, errors) #plot error
 #savefig("ps2_2a.png")
-plot(x_grid, [func_approx, func_true]) #plot
+plot(x_fine, [f_approx, f_true]) #plot
 #savefig("ps2_2b.png")
 
 #optimize point placement
-function eval_points(guess::Vector{Float64})
+function eval_points(diffs::Vector{Float64})
 
-    #rule out dumb guesses
-    if minimum(guess)<0 || maximum(guess)>100
+    #Rule out negative step sizes
+    if sum(diffs.<=0.0) > 0
         return Inf
     else
-        grid = vcat(0.0, guess, 100.0) #assemble grid
-        errs, func_approx, func_true = approx_log(grid) #compute approximation error
-        return sum(errs) #return
+
+        grid = [0.0; [sum(diffs[1:i]) for i in 1:9]; 100.0]
+        
+        #rule out steps size too big
+        if maximum(grid)>100
+            return Inf
+        else
+            errs, func_approx, func_true = approx_log(grid) #compute approximation error
+            return sum(errs) #return
+        end
+
     end
 end
 
 #run optimizing algorithm
-guess_init = [10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0, 90.0]
-opt = optimize(guess->eval_points(guess), guess_init; g_tol = 1e-4) #optimize
+diffs_init = [10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0]
+opt = optimize(diffs->eval_points(diffs), diffs_init; g_tol = 1e-4) #optimize
 
 #report new results
-grid_approx = vcat(0.0, opt.minimizer, 100.0)
-errs, func_approx, func_true = approx_log(grid_approx)
-plot(x_grid, errs) #plot error
+grid_ans = [0.0; [sum(opt.minimizer[1:i]) for i in 1:9]; 100.0]
+errs, func_approx, func_true = approx_log(grid_ans)
+plot(x_fine, errs) #plot error
 #savefig("$dir/ps2_2c.png")
-plot(x_grid, [func_approx, func_true])
+plot(x_fine, [func_approx, func_true])
 #savefig("$dir/ps2_2d.png")
 
 
