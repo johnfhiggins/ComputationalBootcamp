@@ -31,6 +31,7 @@
 
 - [Homework 2:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework2.html) Due Wednesday August 16. 
     - Submit Link: https://classroom.github.com/a/gYCf0Llh
+- [Homework 2 Solutions](https://kevinghunt.github.io/ComputationCamp/homework_solutions/Homework2_solutions.jl)
   
   
 ## Week 3: Advanced Topics
