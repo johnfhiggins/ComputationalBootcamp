@@ -19,4 +19,5 @@ lectures
 week-1-introduction-to-computation-and-julia-1
 week-2-numeric-methods-1
 week-3-advanced-topics-1
+week-4-wrapping-up
 code-alongs

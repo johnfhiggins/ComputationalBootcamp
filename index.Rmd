@@ -72,6 +72,8 @@ This is not a real class, so you will not receive course credit, this will not s
 - Gentzkow and Shapiro's Practioner Guide (Best Practice for Coding and Data) https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf
 - Derivate packages in Julia: https://juliadiff.org/ 
 - Distributed Computing Tutorials: https://enccs.github.io/julia-for-hpc/motivation/
+- Cameron Pfiffer's Julia Bootcamp: https://github.com/cpfiffer/julia-bootcamp-2022
+- Bogumił Kamiński's Julia Express http://bogumilkaminski.pl/files/julia_express.pdf
 
 
 ## Schedule
@@ -131,8 +133,8 @@ This is not a real class, so you will not receive course credit, this will not s
 ### Week 4: Dynamic Programming
 
 - **Lecture 7:** Dynamic Programming
-  - Slides
-  - Code-along
+  - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture7.html)
+  - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong7.jl)
   - Recording
 - **Lecture 8:** Economic Applications
   - Slides

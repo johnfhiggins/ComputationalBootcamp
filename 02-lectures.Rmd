@@ -47,3 +47,13 @@
 
 - [Homework 3:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework3.html) Due Wednesday August 23. 
     - Submit Link: https://classroom.github.com/a/0W6Jm9rV 
+    
+    
+## Week 4: Wrapping Up
+- **Lecture 7:** Parallelization Wrap Up and Dynamic Programming
+  - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture6.html)
+  - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong6.jl)
+  
+  
+  
+  
