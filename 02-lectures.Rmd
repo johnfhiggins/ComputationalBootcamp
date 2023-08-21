@@ -49,11 +49,11 @@
     - Submit Link: https://classroom.github.com/a/0W6Jm9rV 
     
     
-## Week 4: Wrapping Up
+## Week 4: Dynamic Programming
 - **Lecture 7:** Parallelization Wrap Up and Dynamic Programming
   - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture7.html)
   - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong7.jl)
-  
+  - [Recording](https://uwmadison.zoom.us/rec/share/Kc-WI7JPGEGTFpzW3ojmF0rlotNeRWXARrBrn_ZKzJngDLPBvufu095gegV1knuK.2PadjwKTojeFnyL3)
   
   
   

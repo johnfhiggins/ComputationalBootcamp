@@ -135,7 +135,7 @@ This is not a real class, so you will not receive course credit, this will not s
 - **Lecture 7:** Dynamic Programming
   - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture7.html)
   - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong7.jl)
-  - Recording
+  - [Recording](https://uwmadison.zoom.us/rec/share/Kc-WI7JPGEGTFpzW3ojmF0rlotNeRWXARrBrn_ZKzJngDLPBvufu095gegV1knuK.2PadjwKTojeFnyL3)
 - **Lecture 8:** Economic Applications
   - Slides
   - Code-along
