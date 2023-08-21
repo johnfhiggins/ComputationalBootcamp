@@ -13,4 +13,5 @@
     - [Solutions](https://kevinghunt.github.io/ComputationCamp/homework_solutions/Homework2_solutions.jl)
 - [Homework 3:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework3.html) Due Wednesday August 23. 
     - Submit Link: https://classroom.github.com/a/0W6Jm9rV
-- Homework 4, Due August 30
+- [Homework 4](https://kevinghunt.github.io/ComputationCamp/homeworks/homework4.html), Due August 30
+    - Submit Link: https://classroom.github.com/a/I74gIvkM

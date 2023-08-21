@@ -140,9 +140,8 @@ This is not a real class, so you will not receive course credit, this will not s
   - Slides
   - Code-along
   - Recording
-
-
-- **Homework 4:** Due Wednesday August 30. 
+- [Homework 4:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework4.html) Due Wednesday August 30. 
+  - Submit Link: https://classroom.github.com/a/I74gIvkM
 
 
 

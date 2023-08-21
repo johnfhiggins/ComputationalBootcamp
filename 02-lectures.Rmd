@@ -55,5 +55,6 @@
   - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong7.jl)
   - [Recording](https://uwmadison.zoom.us/rec/share/Kc-WI7JPGEGTFpzW3ojmF0rlotNeRWXARrBrn_ZKzJngDLPBvufu095gegV1knuK.2PadjwKTojeFnyL3)
   
-  
+- [Homework 4:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework4.html) Due Wednesday August 30. 
+    - Submit Link: https://classroom.github.com/a/I74gIvkM
   
