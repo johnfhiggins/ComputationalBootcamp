@@ -3175,7 +3175,7 @@ slide:not(.current) .plotly.html-widget{
 
 <ul>
 <li>What type of cereal brand to buy.</li>
-<li>Labor-leisure choose.</li>
+<li>Labor-leisure choice.</li>
 </ul></li>
 <li><strong>Dynamic:</strong> Choices today do affect future pay-offs.
 
@@ -3206,12 +3206,7 @@ slide:not(.current) .plotly.html-widget{
 <li>What price to set?</li>
 <li>How many hours to work?</li>
 </ul></li>
-<li>Not clear which one is simpler, but start simple.
-
-<ul>
-<li>Discrete: Less things to check/calculate.</li>
-<li>continuous: Use derivatives and optimizers.</li>
-</ul></li>
+<li>Not clear which one is simpler, but start simple.</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Infinite Time of Finite Time</h2></hgroup><article  id="infinite-time-of-finite-time">
@@ -3224,7 +3219,7 @@ slide:not(.current) .plotly.html-widget{
 <li>Ok when agents don’t look far in advance.</li>
 <li>Solve with value function iteration or something else.</li>
 </ul></li>
-<li><strong>Finite Time:</strong> Agents decisions end in some terminal period.
+<li><strong>Finite Time:</strong> Agents’ decisions end in some terminal period.
 
 <ul>
 <li>Necessary to study how things evolve over the life-cycle.</li>
@@ -3233,10 +3228,10 @@ slide:not(.current) .plotly.html-widget{
 </ul></li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Ben-Porath Model</h2></hgroup><article  id="ben-porath-model">
+</article></slide><slide class=""><hgroup><h2>Today: Ben-Porath Model</h2></hgroup><article  id="today-ben-porath-model">
 
 <ul>
-<li>What is optimal human accumulation over the life-cycle?</li>
+<li>What is optimal human capital accumulation over the life-cycle?</li>
 <li>Time invested in human capital accumulation:
 
 <ul>
@@ -3251,10 +3246,10 @@ slide:not(.current) .plotly.html-widget{
 </article></slide><slide class=""><hgroup><h2>How do we solve this?</h2></hgroup><article  id="how-do-we-solve-this">
 
 <ul>
-<li>We could start at age 20 and consider all possibley HC paths.
+<li>We could start at age 20 and consider all possible HC paths.
 
 <ul>
-<li>Takes forever</li>
+<li>Takes forever.</li>
 <li>Even if HC only takes two values, there are \(2^{50} &gt; 10^{15}\) possible paths.</li>
 </ul></li>
 <li>Better way: Use dynamic programming.
@@ -3276,34 +3271,33 @@ slide:not(.current) .plotly.html-widget{
 </ul>
 
 <p>\[ 
- h&#39; = a(hI)^\kappa + h)\epsilon 
+ h&#39; = (a(hI)^\kappa + h)\epsilon 
  \] \[ 
  \log\epsilon \sim N(\mu,\sigma^2)
  \] - Terminal condition: \(V(-,-,71) = 0\).</p>
 
-</article></slide><slide class=""><hgroup><h2>age 70 Problem</h2></hgroup><article  id="age-70-problem">
+</article></slide><slide class=""><hgroup><h2>Age 70 Problem</h2></hgroup><article  id="age-70-problem">
 
 <p>\[
     V(a, h, 70) = \max_I u(c) + \beta V(a, h&#39;, 71) 
+\] - subject to: \[ c = h (1 - I) \] - Plug in terminal condition: \[
+    V(a, h, t) = \max_I u(c)
 \]</p>
 
 <ul>
-<li><p>Plug in terminal condition: \[
-  V(a, h, t) = \max_I u(c)
-\]</p></li>
-<li><p>subject to: \[ c = h (1 - I) \]</p></li>
-<li><p>We can solve this! \(I = 0\).</p></li>
+<li>We can solve this! \(I = 0\).</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Then go back to age 69.</h2></hgroup><article  id="then-go-back-to-age-69.">
 
 <ul>
-<li>Now we now \(V(a,h,70)\) for all values of \(a\) and \(h\) on a grid.</li>
+<li>Now we know \(V(a,h,70)\) for all values of \(a\) and \(h\) on a grid.</li>
 <li>We can interpolate \(h\) and solve: \[
   V(a, h, 69) = \max_I u(c) + \beta V(a, h&#39;, 70) 
 \]</li>
-<li>Once we solve this we have \(V(a,h,69)\). Can solve at age 68.</li>
+<li>Once we solve this, we have \(V(a,h,69)\). Can solve at age 68.</li>
 <li>Then solve at age 67. … Then solve at age 20.</li>
+<li>Let’s code this up.</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Wrapping Up</h2></hgroup><article  id="wrapping-up">
@@ -3311,12 +3305,12 @@ slide:not(.current) .plotly.html-widget{
 <p>In this class, we have learned how to:</p>
 
 <ul>
-<li><p>Doing things on a computer that you can’t do with pencil and paper.</p>
+<li><p>Do things on a computer that you can’t do with pencil and paper.</p>
 
 <ul>
 <li>Approximating and optimizing functions.</li>
 </ul></li>
-<li><p>Doing these things quickly.</p>
+<li><p>Do these things quickly.</p>
 
 <ul>
 <li>Writing good code in Julia, dynamic programming, parallelization.</li>
