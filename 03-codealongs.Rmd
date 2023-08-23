@@ -7,3 +7,6 @@
 - [Code Along 5](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong5.jl)
 - [Code Along 6](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong6.jl)
 - [Code Along 7](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong7.jl)
+-[Code-along master.jl](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong8_master.jl)
+-[Code-along functions.jl](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong8_functions.jl)
+-[Code-along structs.jl](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong8_structs.jl)

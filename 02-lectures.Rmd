@@ -54,6 +54,12 @@
   - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture7.html)
   - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong7.jl)
   - [Recording](https://uwmadison.zoom.us/rec/share/Kc-WI7JPGEGTFpzW3ojmF0rlotNeRWXARrBrn_ZKzJngDLPBvufu095gegV1knuK.2PadjwKTojeFnyL3)
+- **Lecture 8:** Economic Applications
+  - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture8.html)
+  - [Code-along master.jl](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong8_master.jl)
+  - [Code-along functions.jl](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong8_functions.jl)
+  - [Code-along structs.jl](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong8_structs.jl)
+  - Recording
   
 - [Homework 4:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework4.html) Due Wednesday August 30. 
     - Submit Link: https://classroom.github.com/a/I74gIvkM
