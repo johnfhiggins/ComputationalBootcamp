@@ -141,7 +141,7 @@ This is not a real class, so you will not receive course credit, this will not s
   - [Code-along master.jl](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong8_master.jl)
   - [Code-along functions.jl](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong8_functions.jl)
   - [Code-along structs.jl](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong8_structs.jl)
-  - Recording
+  - [Recording](https://uwmadison.zoom.us/rec/share/hFXtk8N89sBCZ1e8jQsjXa18hjsteILy8pSR2CIAlxeK5MdYqScm-j4_uH6SNL0V.yHiQKVQ3PbJz3NP6)
 - [Homework 4:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework4.html) Due Wednesday August 30. 
   - Submit Link: https://classroom.github.com/a/I74gIvkM
 
