@@ -17,3 +17,4 @@
     - [Homework 3 Bootstrap](https://kevinghunt.github.io/ComputationCamp/homework_solutions/Homework3_bootstrap.jl)
 - [Homework 4](https://kevinghunt.github.io/ComputationCamp/homeworks/homework4.html), Due August 30
     - Submit Link: https://classroom.github.com/a/I74gIvkM
+- [Homework 4 Solutions](https://kevinghunt.github.io/ComputationCamp/homework_solutions/Homework4_solutions.jl)
