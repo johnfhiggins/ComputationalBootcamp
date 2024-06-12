@@ -2,11 +2,11 @@
 
 
 - [Homework 0](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework0.html), No Due Date
-    - I made the following recording to help walk you through the set-up [(link)]()
+    - I made the following recording to help walk you through the set-up [(link)](https://classroom.github.com/a/EbiCcuus)
     - It would be best to install Julia and a code editor such as VS code before the first lecture. 
     - You will need to install Git and do the rest of the assignment before submitting Homework 1.
 - [Homework 1](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework1.html), Due Wednesday June 26.
-    - Submit Link: https://classroom.github.com/a/PIR0phPT
+    - Submit Link: https://classroom.github.com/a/ltOWDjoe
 - [Homework 2:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework2.html) Due Wednesday July 3. 
     - Submit Link: https://classroom.github.com/a/gYCf0Llh
 - [Homework 3:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework3.html) Due Wednesday July 10. 
