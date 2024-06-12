@@ -94,6 +94,7 @@ This is not a real class, so you will not receive course credit, this will not s
   - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong2.jl)
 
 - [Homework 1:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework1.html) Due Wednesday July 26. 
+- Submit Link: https://classroom.github.com/a/ltOWDjoe
 
 ### Week 2: Numeric Methods
 
