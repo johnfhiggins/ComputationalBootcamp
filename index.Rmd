@@ -108,7 +108,7 @@ This is not a real class, so you will not receive course credit, this will not s
 
 
 - [Homework 2:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework2.html) Due Wednesday July 3. 
-    - Submit Link: https://classroom.github.com/a/gYCf0Llh
+    - Submit Link: https://classroom.github.com/a/_scR5Vb7
 
 ### Week 3: Advanced Topics
 
@@ -121,7 +121,7 @@ This is not a real class, so you will not receive course credit, this will not s
   - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong6.jl)
 
 - [Homework 3:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework3.html) Due Wednesday July 10. 
-    - Submit Link: https://classroom.github.com/a/0W6Jm9rV
+    - Submit Link: https://classroom.github.com/a/7-WWUk4Q
 
 ### Week 4: Dynamic Programming
 
@@ -136,7 +136,7 @@ This is not a real class, so you will not receive course credit, this will not s
   - [Code-along structs.jl](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong8_structs.jl)
 
 - [Homework 4:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework4.html) Due Wednesday July 17. 
-  - Submit Link: https://classroom.github.com/a/I74gIvkM
+  - Submit Link: https://classroom.github.com/a/4CBmQTaW
 
 
 ## Misconduct Statement
