@@ -12,19 +12,19 @@ github-repo: kevinghunt/ComputationCamp
 
 # Syllabus 
 
-**Instructor:** Kevin Hunt, kghunt@wisc.edu. 
+**Instructor:** John Higgins, jfhiggins@wisc.edu. 
 
-**Dates:** July 31 to August 23, 2023. 
+**Dates:** June 17 to July 10, 2024. 
 
- **Lectures:** Monday and Wednesday, 1:30 to 2:45pm. 
+ **Lectures:** Monday and Wednesday, 1:00 to 2:15pm. 
 
-**Office Hours:** Monday and Wednesday, 2:45 to 3:45pm. 
+**Office Hours:** Monday and Wednesday, 2:30 to 3:45pm. 
 
-**Location:** Social Sciences Room 7142 (Morton Room) and [Zoom](https://uwmadison.zoom.us/j/93415370734?pwd=V1l1TmdmV2lYYUNkTk5rQmdiZU9Wdz09).
+**Location:** Social Sciences Room 5206 and [Zoom](https://uwmadison.zoom.us/j/94005146127?pwd=obHy3MRaU409nQtDHu5dHFZVIsOeXD.1).
 
 ## Acknowledgements
 
-Many thanks to [Garrett Anstreicher](https://www.garrettanstreicher.com/), who taught this camp a few times before me. Most of the material and class structure was made by him. I have added a few things and learned a lot from people/sites mentioned under resources.  
+Many thanks to [Kevin Hunt](https://kevinghunt.github.io/) and [Garrett Anstreicher](https://www.garrettanstreicher.com/), who both taught this camp before me. Most of the material and class structure were made by them. I have added a few things and learned a lot from people/sites mentioned under resources.
 
 ## Course Description 
 
