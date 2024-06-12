@@ -1,20 +1,15 @@
 # Homeworks
 
 
-- [Homework 0](https://johnfhiggins.github.io/ComputationCamp/homeworks/homework0.html), No Due Date
+- [Homework 0](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework0.html), No Due Date
     - I made the following recording to help walk you through the set-up [(link)]()
     - It would be best to install Julia and a code editor such as VS code before the first lecture. 
     - You will need to install Git and do the rest of the assignment before submitting Homework 1.
 - [Homework 1](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework1.html), Due August 9
     - Submit Link: https://classroom.github.com/a/PIR0phPT
-    - [Solutions](https://johnfhiggins.github.io/ComputationalBootcamp/homework_solutions/Homework1_solutions.jl)
 - [Homework 2:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework2.html) Due Wednesday August 16. 
     - Submit Link: https://classroom.github.com/a/gYCf0Llh
-    - [Solutions](https://johnfhiggins.github.io/ComputationalBootcamp/homework_solutions/Homework2_solutions.jl)
 - [Homework 3:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework3.html) Due Wednesday August 23. 
     - Submit Link: https://classroom.github.com/a/0W6Jm9rV
-    - [Homework 3 Solutions](https://johnfhiggins.github.io/ComputationalBootcamp/homework_solutions/Homework3_solutions.jl)
-    - [Homework 3 Bootstrap](https://johnfhiggins.github.io/ComputationalBootcamp/homework_solutions/Homework3_bootstrap.jl)
 - [Homework 4](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework4.html), Due August 30
     - Submit Link: https://classroom.github.com/a/I74gIvkM
-- [Homework 4 Solutions](https://johnfhiggins.github.io/ComputationalBootcamp/homework_solutions/Homework4_solutions.jl)

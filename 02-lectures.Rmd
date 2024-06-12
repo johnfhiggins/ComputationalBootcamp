@@ -1,68 +1,60 @@
 # Lectures
 
-[Zoom Link for the Live Lecture](https://uwmadison.zoom.us/j/93415370734?pwd=V1l1TmdmV2lYYUNkTk5rQmdiZU9Wdz09).
+[Zoom Link for the Live Lecture](https://uwmadison.zoom.us/j/94005146127?pwd=obHy3MRaU409nQtDHu5dHFZVIsOeXD.1).
 
-## Week 1: Introduction to Computation and Julia
+### Week 1: Introduction to Computation and Julia
 
 - **Lecture 1:** Intro to Computation and Basic Julia
-  - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture1.html)
-  - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong1.jl)
-  - [Recording Part 1](https://uwmadison.zoom.us/rec/share/YbH5nwK8MFfdrG_79ab21fIChvq_GLK2G0cj1PuRpy29LgDW2ddl46KoGUvMzWoz.uN0dl820cFXMQ54_)
-  -	[Recording Part 2](https://uwmadison.zoom.us/rec/share/grQK03ljFWrQB5hBKKgoAVy9BuR5hg85PgyVvQJrXqJ5olG1fCe9vh336wh_L_yH.8-wkiBg4GIsDT3eC)
-- **Lecture 2:** Performance Optimization and Advanced Julia
-  - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture2.html)
-  - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong2.jl)
-  - [Recording](https://uwmadison.zoom.us/rec/share/ANmR1Qr-iDoAxMOItHY9zgQk41_bbABcPN4eD3mVE5OVLvhzcXr80yBSEjEi8Dc.V7Hy_3yeHQm84srl)
-  
-- [Homework 1:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework1.html) Due Wednesday August 9. 
-- [Homework 1 Solutions](https://kevinghunt.github.io/ComputationCamp/homework_solutions/Homework1_solutions.jl)
+  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/Lecture1.html)
+  - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong1.jl)
 
-## Week 2: Numeric Methods
+- **Lecture 2:** Performance Optimization and Advanced Julia
+  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/Lecture2.html)
+  - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong2.jl)
+
+- [Homework 1:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework1.html) Due Wednesday July 26. 
+
+### Week 2: Numeric Methods
 
 - **Lecture 3:** Numeric Optimization 
-  - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture3.html)
-  - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong3.jl)
-  - [Recording](https://uwmadison.zoom.us/rec/share/xD1LsrLsUF8XtJUjPTVDA_2d52EKgQTF1a6Dc3lBOSB7JlRk4PMUi_h0oMRnMtb5.VW6mJ7BkoiC6riUk)
+  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/Lecture3.html)
+  - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong3.jl)
+
 - **Lecture 4:** Interpolation
-  - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture4.html)
-  - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong4.jl)
-  - [Recording](https://uwmadison.zoom.us/rec/share/YNnLYBVpnTSQsMTHQGDDWx2n89gURdYXzVWM8dRyV4o91bAfmCkC8q1IT3f-jo3B.msXmwKB-ZcXcIZRL)
+  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/Lecture4.html)
+  - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong4.jl)
 
 
-- [Homework 2:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework2.html) Due Wednesday August 16. 
+- [Homework 2:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework2.html) Due Wednesday July 3. 
     - Submit Link: https://classroom.github.com/a/gYCf0Llh
-- [Homework 2 Solutions](https://kevinghunt.github.io/ComputationCamp/homework_solutions/Homework2_solutions.jl)
-  
-  
-## Week 3: Advanced Topics
 
-- **Lecture 5:** Numeric Integration and Stochastic Methods
-  - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture5.html)
-  - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong5.jl)
-  - [Recording](https://uwmadison.zoom.us/rec/share/Rc-Mno_HDmfyakQGBhzxhbOjYIxXkX8ka4vkksy2p5Y-lxDZCJ2x08U8ja6LzMEV.54CVfkLcQhOLID_m)
+### Week 3: Advanced Topics
+
+- **Lecture 5:** Numeric Integration
+  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/Lecture5.html)
+  - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong5.jl)
+
 - **Lecture 6:** Parallelization and UW Resources
-  - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture6.html)
-  - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong6.jl)
-  - [Recording](https://uwmadison.zoom.us/rec/share/ZkkEGxop9imwlGAfhqobNSm9M5uRupUj3DqE1xGMBTo7-ZmJKzO92OSKJ5d_I7JM.KK3JK7rsgIHu7yuc)
+  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/Lecture6.html)
+  - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong6.jl)
 
-- [Homework 3:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework3.html) Due Wednesday August 23. 
-    - Submit Link: https://classroom.github.com/a/0W6Jm9rV 
-- [Homework 3 Solutions](https://kevinghunt.github.io/ComputationCamp/homework_solutions/Homework3_solutions.jl)
-- [Homework 3 Bootstrap](https://kevinghunt.github.io/ComputationCamp/homework_solutions/Homework3_bootstrap.jl)
-    
-    
-## Week 4: Dynamic Programming
-- **Lecture 7:** Parallelization Wrap Up and Dynamic Programming
-    - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture7.html)
-    - [Code-along](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong7.jl)
-    - [Recording](https://uwmadison.zoom.us/rec/share/Kc-WI7JPGEGTFpzW3ojmF0rlotNeRWXARrBrn_ZKzJngDLPBvufu095gegV1knuK.2PadjwKTojeFnyL3)
+- [Homework 3:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework3.html) Due Wednesday July 10. 
+    - Submit Link: https://classroom.github.com/a/0W6Jm9rV
+
+### Week 4: Dynamic Programming
+
+- **Lecture 7:** Dynamic Programming
+  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/Lecture7.html)
+  - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong7.jl)
+
 - **Lecture 8:** Economic Applications
-  - [Slides](https://kevinghunt.github.io/ComputationCamp/lectures/Lecture8.html)
-  - [Code-along master.jl](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong8_master.jl)
-  - [Code-along functions.jl](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong8_functions.jl)
-  - [Code-along structs.jl](https://kevinghunt.github.io/ComputationCamp/codealongs/CodeAlong8_structs.jl)
-    - [Recording](https://uwmadison.zoom.us/rec/share/hFXtk8N89sBCZ1e8jQsjXa18hjsteILy8pSR2CIAlxeK5MdYqScm-j4_uH6SNL0V.yHiQKVQ3PbJz3NP6)
-- [Homework 4:](https://kevinghunt.github.io/ComputationCamp/homeworks/homework4.html) Due Wednesday August 30. 
-    - Submit Link: https://classroom.github.com/a/I74gIvkM
-- [Homework 4 Solutions](https://kevinghunt.github.io/ComputationCamp/homework_solutions/Homework4_solutions.jl)
+  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/Lecture8.html)
+  - [Code-along master.jl](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong8_master.jl)
+  - [Code-along functions.jl](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong8_functions.jl)
+  - [Code-along structs.jl](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong8_structs.jl)
+
+- [Homework 4:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework4.html) Due Wednesday July 17. 
+  - Submit Link: https://classroom.github.com/a/I74gIvkM
+
+
   
