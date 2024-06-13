@@ -5,11 +5,11 @@
 ### Week 1: Introduction to Computation and Julia
 
 - **Lecture 1:** Intro to Computation and Basic Julia
-  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/Lecture1.html)
+  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/lecture1.pdf)
   - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong1.jl)
 
 - **Lecture 2:** Performance Optimization and Advanced Julia
-  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/Lecture2.html)
+  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/lecture2.pdf)
   - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong2.jl)
 
 - [Homework 1:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework1.html) Due Wednesday July 26. 
@@ -18,11 +18,11 @@
 ### Week 2: Numeric Methods
 
 - **Lecture 3:** Numeric Optimization 
-  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/Lecture3.html)
+  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/lecture3.pdf)
   - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong3.jl)
 
 - **Lecture 4:** Interpolation
-  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/Lecture4.html)
+  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/lecture4.pdf)
   - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong4.jl)
 
 
@@ -32,11 +32,11 @@
 ### Week 3: Advanced Topics
 
 - **Lecture 5:** Numeric Integration
-  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/Lecture5.html)
+  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/lecture5.pdf)
   - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong5.jl)
 
 - **Lecture 6:** Parallelization and UW Resources
-  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/Lecture6.html)
+  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/lecture6.pdf)
   - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong6.jl)
 
 - [Homework 3:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework3.html) Due Wednesday July 10. 
@@ -45,11 +45,11 @@
 ### Week 4: Dynamic Programming
 
 - **Lecture 7:** Dynamic Programming
-  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/Lecture7.html)
+  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/lecture7.pdf)
   - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong7.jl)
 
 - **Lecture 8:** Economic Applications
-  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/Lecture8.html)
+  - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/lecture8.pdf)
   - [Code-along master.jl](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong8_master.jl)
   - [Code-along functions.jl](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong8_functions.jl)
   - [Code-along structs.jl](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong8_structs.jl)
