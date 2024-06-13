@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Ph.D. Computation Camp</title>
+  <title>Homework 0 | Ph.D. Computation Camp</title>
   <meta name="description" content="This is the class page for the UW-Madison Computation Camp for PhD students." />
   <meta name="generator" content="bookdown 0.39 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Ph.D. Computation Camp" />
+  <meta property="og:title" content="Homework 0 | Ph.D. Computation Camp" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is the class page for the UW-Madison Computation Camp for PhD students." />
   <meta name="github-repo" content="johnfhiggins/ComputationalBootcamp" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Ph.D. Computation Camp" />
+  <meta name="twitter:title" content="Homework 0 | Ph.D. Computation Camp" />
   
   <meta name="twitter:description" content="This is the class page for the UW-Madison Computation Camp for PhD students." />
   
@@ -28,7 +28,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
+<link rel="prev" href="code-alongs.html"/>
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -131,18 +131,63 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="homework-0" class="section level1 hasAnchor">
+<h1>Homework 0<a href="homework-0.html#homework-0" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="computational-bootcamp-2024" class="section level4 hasAnchor">
+<h4>Computational Bootcamp 2024<a href="homework-0.html#computational-bootcamp-2024" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+<div id="no-due-date" class="section level4 hasAnchor">
+<h4>No due date<a href="homework-0.html#no-due-date" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+</div>
+<div id="install-julia-progamming-language" class="section level2 hasAnchor">
+<h2>1. Install Julia Progamming Language<a href="homework-0.html#install-julia-progamming-language" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><a href="https://julialang.org/downloads">https://julialang.org/downloads</a></p>
+<p>After installing Julia, you should be able to open a Julia command prompt and run Julia code on your computer.</p>
+</div>
+<div id="make-a-github-account" class="section level2 hasAnchor">
+<h2>2. Make a github account<a href="homework-0.html#make-a-github-account" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><a href="https://github.com/">https://github.com</a></p>
+</div>
+<div id="install-git-and-configure-basic-settings" class="section level2 hasAnchor">
+<h2>3. Install Git and configure basic settings<a href="homework-0.html#install-git-and-configure-basic-settings" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a></p>
+<p>After installing git, you should be able to go open a git command prompt on your computer.</p>
+<p>You will want to configure some basic settings for git by running the following commands. The first two commands are only necessary on if you are on a Windows operating system. For the last three, replace the information in parenthesis with your own info.</p>
+<pre><code>  git config --global core.eol lf
+  git config --global core.autocrlf false
+  git config --global user.email &quot;you@example.com&quot;
+  git config --global user.name &quot;Your Name&quot;   
+  git config --global github.user &quot;GITHUBUSERNAME&quot;  </code></pre>
+<p><strong>OPTIONAL</strong> Quant Econ provides an excellent discussion of version control:</p>
+<p><a href="https://julia.quantecon.org/software_engineering/version_control.html">https://julia.quantecon.org/software_engineering/version_control.html</a></p>
+</div>
+<div id="recommended-install-visual-studio-code" class="section level2 hasAnchor">
+<h2>4. (Recommended) Install Visual Studio Code<a href="homework-0.html#recommended-install-visual-studio-code" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Julia does not come with a standard code editor, so you will want to download one. I will use VS Code in class, which is the most popular code editor.</p>
+<p><a href="https://code.visualstudio.com">https://code.visualstudio.com</a></p>
+<p>After installing VS code, you will want to add the “Julia” and “GitHub Pull Requests and Issues” extensions. Extensions can be accessed from the tetris-like four square blocks icon on the left.</p>
+</div>
+<div id="submit-a-simple-github-classroom-assignment." class="section level2 hasAnchor">
+<h2>5. Submit a simple Github classroom assignment.<a href="homework-0.html#submit-a-simple-github-classroom-assignment." class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this class, we will use Github classroom for submitting assignments. This will help you get comfortable with using version control, git, and Github.</p>
+<ol style="list-style-type: decimal">
+<li><p>Click on the Homework 0 link I shared with you in the intro email to accept the Homework 0 assignment. This will create a Homework 0 repository for you on Github.</p></li>
+<li><p>Clone the repository from Github to your local computer using the “git clone” command.</p></li>
+<li><p>Edit the code.jl file to include the following command:</p>
+<p>print(“Hello world”)</p></li>
+<li><p>Commit and sync your changes to github.</p></li>
+<li><p>You’re done!</p></li>
+</ol>
+<p>// add bootstrap table styles to pandoc tables function bootstrapStylePandocTables() { $(‘tr.odd’).parent(‘tbody’).parent(‘table’).addClass(‘table table-condensed’); } $(document).ready(function () { bootstrapStylePandocTables(); }); $(document).ready(function () { window.buildTabsets(“TOC”); }); $(document).ready(function () { $(‘.tabset-dropdown &gt; .nav-tabs &gt; li’).click(function () { $(this).parent().toggleClass(‘nav-tabs-open’); }); }); (function () { var script = document.createElement(“script”); script.type = “text/javascript”; script.src = “<a href="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML\_HTMLorMML" class="uri">https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML\_HTMLorMML</a>”; document.getElementsByTagName(“head”)<span class="math display">\[0\]</span>.appendChild(script); })();</p>
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
+<a href="code-alongs.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
@@ -174,7 +219,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/%s",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/hw0.Rmd",
 "text": "Edit"
 },
 "history": {
