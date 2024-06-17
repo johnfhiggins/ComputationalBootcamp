@@ -217,17 +217,125 @@ end
 @show x
 
 
+#if you want to check if two conditions hold simultaneously, you can use the & operator!
+
+#this will return true, since both 3 > 2 and 4 > 3 are true statements
+if (3 > 2) & (4 > 3)
+    print("True!")
+else
+    print("False!")
+end
+
+#however, this will return false; even though 3 > 2 is true, 3 > 4 is false.
+#since one of the statements is false, it will return false. It would only return true if both of the conditions were true
+if (3 > 2) & (3 > 4)
+    print("True!")
+else
+    print("False!")
+end
+
+#if instead we want to check if either condition holds (i.e. at least one of the conditions is true), we can use the 'or' operator ||
+
+#this will evaluate as true, since (3 > 2) is true. Even though (3 > 4) is false, || only checks that at least one of the conditions is true
+if (3 > 2) || (3 > 4)
+    print("True!")
+else
+    print("False!")
+end
+
+#this will evaluate as false, since both conditions are false:
+if (3 < 2) || (3 > 4)
+    print("True!")
+else
+    print("False!")
+end
+
+
+#if there are multiple cases you would like to check and handle separately, you can use the command elseif!
+x = 0
+if x < 0 
+    #code for the cases when x < 0
+    print("x is negative")
+elseif x > 0
+    #code for when x > 0
+    print("x is positive")
+else #the remaining possibility is that x = 0
+    #code for x=0
+    print("x = 0")
+end
+
+#when writing if/elseif/else statements, make sure you understand what cases your "else" block contains! It can be easy to get things mixed up/forget about some edge cases. 
+
+#by the way: you can do multiple elseif blocks
+
+if x == 0
+    print("x = 0")
+elseif x == 1
+    print("x = 1")
+elseif x == 2
+    print("x = 2")
+elseif x == 3
+    print("x = 3")
+else
+    print("x is not 0, 1, 2, or 3")
+end
+
+########### printing to console ###########
+
+#As you've seen above, the print command will print things to the console
+
+#this prints the word "Hello!"
+print("Hello!")
+
+#Let's print hello twice and see what happens...
+print("Hello!")
+print("Hello!")
+
+#oh no! We got "Hello!Hello!", which is not what we wanted. 
+#If you want to print something on a new line, you can use the println command:
+println("Hello!")
+println("Hello!")
+
+#as intended!
+
+
+#if you want to print multiple things, you can do this using one print command:
+
+#This will print "Hello friend!"
+print("Hello ", "friend!")
+
+#note that it is important to include spaces/whatever punctuation you intend; Julia will combine strings by smushing them together and won't automatically add spaces/punctuation for you:
+print("Hello","friend!")
+
+#you can alse print variables:
+greeting = "Hello, "
+student_name = "John Higgins"
+print(greeting, student_name)
+
+#this is useful if you want to print things that take variables as input
+
+apple_count = 5
+println("I have ", apple_count, " apples" )
+apple_count += 1
+println("I now have ", apple_count, " apples" )
+
+#slightly more complicated example with a loop:
+
+student_names = ["Student One", "Student Two", "Student Three"]
+for name in student_names
+    println("Hello, ", name, ". Welcome to the course!")
+end
 
 
 
+#### enumerate
 
+#if you want to get an item and its corresponding index (i.e. position) in its array, you can use enumerate:
 
-
-
-
-
-
-
+student_names = ["Chris Taber", "Dean Corbae", "JF Houde"]
+for (index,name) in enumerate(student_names)
+    println("Hi ",name,", you are student number ", index)
+end
 
 
 

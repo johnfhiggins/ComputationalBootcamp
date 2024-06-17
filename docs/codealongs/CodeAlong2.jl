@@ -390,3 +390,155 @@ plot(para.k_grid, sols.kp)
 plot!(collect(0:45), collect(0:45))
 
 
+
+
+#### optional
+
+#the order in which you loop over arrays matters! Consider the following:
+
+function loop_1()
+    n_r=3000
+    n_c=3000
+    A = zeros(Float64,n_r,n_c)
+    count = zeros(Float64, n_r,n_c)
+    for i=1:n_r, j=1:n_c
+        count[i,j] = 0.0
+    end
+    return count
+end
+
+function loop_2()
+    n_r=3000
+    n_c=3000
+    A = zeros(Float64,n_r,n_c)
+    count = zeros(Float64, n_r,n_c)
+    for j=1:n_c, i=1:n_r
+        count[i,j] = 0.0
+    end
+    return count
+end
+
+using BenchmarkTools
+
+@benchmark loop_1()
+@benchmark loop_2()
+
+#basically: we did the exact same operation (created a square matrix with all zero entries). One way, we filled in the rows first. The second way, we filled in the columns first. These get us the exact same result, but the second one gives us the result in basically ~half the time~! This shows how subtle things (like the order in which you do a nested loop) can have a big impact on the results you get.
+
+#however, it can be sometimes confusing to find the right way to iterate through a multi-dimensional array (especially if you have 3 or more dimensions). In order to always load them in the most efficient way, use eachindex! It will always load the elements in the most efficient order.
+function loop_each_index()
+    n_r=3000
+    n_c=3000
+    A = zeros(Float64,n_r,n_c)
+    count = zeros(Float64, n_r,n_c)
+    for ind in eachindex(count)
+        count[ind] = 0.0
+    end
+    return count
+end
+loop_each_index()
+@benchmark loop_each_index()
+#
+
+
+function copy_col_row(x::Vector{Float64})
+    n = length(x)
+    out = zeros(Float64, n, n)
+    for col = 1:n, row = 1:n
+        out[row, col] = x[row]
+    end
+    return out
+end
+
+@elapsed copy_col_row(rand(10000))
+
+function copy_row_col(x::Vector{Float64})
+    n = length(x)
+    out = zeros(Float64, n, n)
+    for row = 1:n, col = 1:n
+        out[row, col] = x[col]
+    end
+    return out
+end
+
+@elapsed copy_row_col(rand(10000))
+
+
+
+### use views!!
+
+function no_views()
+    n_r = 1000
+    n_c = 1000
+    x = zeros(Float64,n_r, n_c)
+    output = zeros(Float64,n_r, n_c)
+    for i=1:n_r
+        output[i,:] = x[i,:] .+ i.*50.0
+    end
+    return output
+end
+
+
+function with_views()
+    n_r = 1000
+    n_c = 1000
+    x = zeros(Float64,n_r, n_c)
+    output = zeros(Float64, n_r, n_c)
+    for i=1:n_r
+        view(output,i,:) .= view(x,i,:) .+ i.*50.0
+    end
+    return output
+end
+
+
+a = no_views()
+b = with_views()
+@elapsed no_views()
+@elapsed with_views()
+
+@benchmark no_views()
+#minimum of 5.5 milliseconds, median of 8.12 milliseconds
+@benchmark with_views()
+#minimum of 2.636 milliseconds, median of 4.25 milliseconds!
+
+#this is literally the same operation, same result, but in almost half of the time!! Also, much less memory being allocated. 
+#If you are comfortable using them, views can sometimes be another useful huge way to speed up your code
+#One big warning: you should be careful, since views can be a bit tricky to use and you should make sure you understand how to use them. 
+
+#one way for you to have your cake and eat it too: use the @views macro! It allows you to use array slices that you're likely more comfortable with yet still get the performance benefits of using views!
+
+#sorry this function name is trash
+function no_views_with_a_view()
+    n_r = 1000
+    n_c = 1000
+    x = zeros(Float64,n_r, n_c)
+    output = zeros(Float64,n_r, n_c)
+    for i=1:n_r
+        #only line that changes - we added the macro at the beginning
+        @views output[i,:] = x[i,:] .+ i.*50.0
+    end
+    return output
+end
+
+@benchmark no_views_with_a_view()
+#whoa! That's ~basically as fast as the fast one! I would recommend doing this if you don't want to bother too much with rewriting your code for maximum efficiency
+
+
+#now I know you may be wondering: what would happen if we iterated over the columns first and fill in the rows? Wouldn't that be faster, as we saw before? That's a great question. Rewriting the view function but looping over the columns, we see another big improvement in speed. Crazy!
+function with_views_columns()
+    n_r = 1000
+    n_c = 1000
+    x = zeros(Float64,n_r, n_c)
+    output = zeros(Float64, n_r, n_c)
+    for i=1:n_c
+        view(output,:,i) .= view(x,:,i) .+ i.*50.0
+    end
+    #since we looped over the columns, we need to transpose to get the same output as the other functions
+    output = transpose(output)
+    return output
+end
+
+@benchmark @views no_views()
+@benchmark with_views_c()
+#minimum of 1.473 milliseconds, median of 1.963 milliseconds!
+#again, this shows that looping over columns vs rows can make a big difference in terms of speed!
