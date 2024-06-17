@@ -66,7 +66,30 @@ end
 x
 
 
+### functions with multiple outputs
 
+# if we want a function to return multiple objects (e.g. the market price and quantity), we can do that!
+
+function find_eq()
+    quantity = 10.0
+    price = 2.0
+    return quantity, price
+end
+
+#we can do this a few different ways; the first is to assign each output its own variable:
+eq_q, eq_p = find_eq()
+println("Equilibrium quantity is: ", eq_q)
+println("Equilibrium price is: ", eq_p)
+
+
+#or, you can define one variable to hold all the function outputs and then access each element using its index: 
+eq = find_eq()
+
+#you can see that eq returns (10.0, 2.0) - eq is a `tuple` of values. Intuitively, it is kind of like a vector (but treated differently by Julia). 
+print(eq)
+
+println("Equilibrium quantity is: ", eq[1]) #quantity was the first item returned
+println("Equilibrium price is: ", eq[2]) #price was the second item 
 
 ###################################################################################################
 # Tip 1: Write things inside functions
