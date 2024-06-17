@@ -57,7 +57,14 @@ x = 2^3
 
 y = x + 5
 
+#emojis!!
 🐟 = 112
+🤑 = 300
+🐟 + 🤑
+#type '\', then enter the desired emoji name
+
+#you can also do greek letters:
+β= 3
 
 # There are special operations for updating variables
 x += 1 #This adds on to x
@@ -74,13 +81,35 @@ x /= 10
 # An array is a collection of elements. 
 
 # A vector is a 1 dimensional array. 
+
 v1 = rand(4) # Four random numbers between 0 and 1
 v2 = collect(1:2:41)
 v3 = collect(range(start = 1, stop = 10, length = 100))
 
+#if you want to create your own (column) vector with specified values, just enter it like this:
+v1 = [4.0, 0.3, 17.0, -0.2]
+#note the comma between the entries
+#the comma tells julia that the next entry should be in the next row 
+
+#same, but for a row vector
+v1 = [4.0 0.3 17.0 -0.2]
+#note the lack of commas or any separator
+
 # A matrix is 2-D array
 A3 = rand(4,5)
 
+#to create one of these manually, you can do it like this:
+A4 = [1.0 2.0; 3.0 4.0]
+#(this is my preferred way)
+
+#OR you could do it like this: (needlessly confusing, in my opinion)
+A4 = [[1.0, 3.0]  [2.0, 4.0]]
+
+#OR you could even do this (please don't do this, even though it technically works it just feels wrong)
+A5 = [1.0 2.0
+3.0 4.0]
+
+#the confusing thing for me to learn initially: knowing which way I should enter rows vs. columns - I would ~highly~ recommend printing the matrix you just created to the console to make sure that the matrix actually looks like what you want it to look like
 
 # Julia has built-in matrix operations
 x = rand(4)
@@ -104,7 +133,8 @@ log.(Z) #Take log of all the elements of Z
 # 5. Packages
 ########################################################################
 
-# The right square bracket ] opens the package interface to add packages.
+# The right square bracket ] opens the package interface to add packages. To install a package, you will need to type the ] (which will then show the prompt 'pkg>' instead of 'julia>'. From there, you will want to type add 'package_name', where 'package_name' is the name of your package. Once installed, you can load the package by typing 'using package_name')
+
 using Distributions, Plots
 
 
@@ -123,6 +153,7 @@ end
 
 x_vec[4]
 
+#by the way: the first time you plot something, it takes longer than subsequent times
 plot(x_vec)
 
 
@@ -143,9 +174,9 @@ end
 coefs = zeros(100)
 
 for i in 1:100
-    ϵ_vec = rand(Normal(), 100)
+    ε_vec = rand(Normal(), 100)
     X = rand(Normal(), 100)
-    Y = X + ϵ_vec
+    Y = X + ε_vec
 
     coefs[i] = OLS(Y,X)
 end

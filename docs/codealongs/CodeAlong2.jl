@@ -26,7 +26,7 @@
 
 x = 2 #Here, x is a global variable. 
 
-# We can operate on x in the global scope. 
+# We can operate on x in the global scope (i.e. directly from the command line/REPL). 
 x + 4
 
 # When you make a function, you define a new local scope.
@@ -122,6 +122,7 @@ end
 
 @time g(m)
 
+#this is an improvement of two orders of magnitude - that's insane!! When you start doing more complex tasks (e.g. estimating/simulating a model a bunch of times), those improvements really add up. To put that in context: this is the difference between your code taking one day to run vs. taking 15 minutes - efficiency matters!
 
 
 ###################################################################################################
@@ -131,8 +132,13 @@ end
 # Types describes the structure and behavior of an element. 
 # We have seen lots of types already in the first  lecture
 
-# Integer with 64 bits
+# Integer with 64 bits 
 typeof(1)
+#(for those curious: bits are the amount of computer memory needed to store an object; an integer with 64 bits has a minimum value of -9,223,372,036,854,775,808 and a maximum value of 9,223,372,036,854,775,807. 
+#Conversely, a 32 bit integer has a min value of -2,147,483,648 and a max of 2,147,483,647. )
+#There's a tradeoff: using Int64 allows for significantly more possible values, but takes up double the space. This can lead to slower performance/more memory consumption. 
+#that being said, you should probably always use 64 bit Integers/Floating numbers (there's a good reason why this is the default)
+
 # Floating number with 64 bits
 typeof(1.0)
 # String 
@@ -156,15 +162,20 @@ typeof(y)
 
 # You can also specify the type of your function arguments.
 function h(x::Int64)
-
     return x * 100
-
 end
 
 h(10) #Your function works with integers
 h(10.0) #But it will not work with floats. 
 
-# You can avoid this by allowing julia to infer the type
+# You can avoid this by allowing julia to infer the type, but this can make your code run slower 
+
+#=it is generally good practice for you specify the type in the function argument.
+The short reason is that if you don't use type annotations, it takes time for julia to figure out the type. This can slow down your code.
+Also, it can help you catch bugs/errors in the way you've written your function or in the inputs you're passing to the function. Requiring things to be of the correct type will help you better diagnose issues with your code.
+There are some more subtle reasons too, but I won't dwell on those for now.
+=#
+
 
 function h2(x)
     return x * 100
@@ -239,7 +250,22 @@ end
 # Julia is able to write very efficient machine code to execute the program instantly. 
 # While for c1, it doesn't know the type will always be float, and has to do many useless calculations. 
 
+## another remark: note the huge difference in memory allocations! For f(c_float), Julia needed to allocate 16 bytes in a total of one allocation (very small, basically impossible to make it more efficient than that). For f(c_any), Julia needed to allocate 305.17 ~~Megabytes~~ of memory (305 million bytes!), and makes 19,999,489 total allocations!! These differences are huge and can make a dramatic difference in the speed of your code. 
 
+
+#note: when timing things precisely, I like to use the package BenchmarkTools.
+#This package essentially runs your code a bunch of times and reports the minimum amount of time it took to run (as well as other statistics)
+
+#for example, here's the comparison of f(c_any) vs f(c_float) using @benchmark:
+using BenchmarkTools
+@benchmark f(c_any)
+@benchmark f(c_float)
+
+#isn't that cool??
+
+#you can also use @btime if you just want the number and not all the distribution stuff
+@btime f(c_any)
+@btime f(c_float)
 
 ###################################################################################################
 # Optimal Investment Problem
@@ -255,7 +281,7 @@ using Parameters
     δ::Float64 = 0.025
     α::Float64 = 0.36
 
-    k_grid::Vector{Float64}=collect(range(0.1, length = 1800, stop = 45.0))       
+    k_grid::Vector{Float64}=collect(range(0.1, length = 1800, stop = 45.0))   
     N_k::Int64 = length(k_grid)
 
     tol::Float64 = 10^-4
@@ -272,8 +298,8 @@ end
 
 function build_ModelSolutions(para)
 
-    V = zeros(para.N_k)
-    kp = zeros(para.N_k)
+    V = zeros(Float64,para.N_k)
+    kp = zeros(Float64,para.N_k)
 
     sols = ModelSolutions(V,kp)
 
@@ -295,14 +321,14 @@ function bellman(para, sols)
     @unpack_ModelParameters para
     @unpack_ModelSolutions sols
 
-    V_next = zeros(para.N_k)
-    kp_next = zeros(N_k)
+    #note: when creating new arrays of zeros, it is good to declare the type! This way Julia doesn't have to figure it out later
+    V_next = zeros(Float64,para.N_k)
+    kp_next = zeros(Float64,N_k)
 
     for i_k = eachindex(k_grid)
         max_util = -1e10
         k = k_grid[i_k]
         budget = k^α + (1-δ)*k
-
         for i_kp = eachindex(k_grid)
             
             c = budget - k_grid[i_kp]
@@ -334,7 +360,7 @@ function solve_model(para, sols)
     @unpack_ModelParameters para
     @unpack_ModelSolutions sols
 
-    V_next = zeros(N_k)
+    V_next = zeros(Float64,N_k)
     max_diff = tol + 10.0
     n = 0
     while max_diff > tol
