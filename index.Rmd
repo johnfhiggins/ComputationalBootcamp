@@ -91,7 +91,7 @@ Passcode: 7VM!5.Vn)
   - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/lecture1.pdf)
   - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong1.jl)
   - [Recording](https://uwmadison.zoom.us/rec/share/ynn8lvn74Gl4zZaJQ_tQmhVo3pvyLBMaE98E2HVagWL1Kmb2lJhFdVikDxDjJYSu.ELFWtDc2BCCN0jRu 
-Passcode: N#u3=Es#)
+Passcode: N#u3=Es#) (Passcode: N#u3=Es#)
 
 - **Lecture 2:** Performance Optimization and Advanced Julia
   - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/lecture2.pdf)
