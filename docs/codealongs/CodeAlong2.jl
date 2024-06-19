@@ -164,6 +164,13 @@ typeof(1)
 
 # Floating number with 64 bits
 typeof(1.0)
+
+x = 4
+y = 5
+z = x/y
+x=4.0
+y=5.0
+z=x/y
 # String 
 typeof("abc")
 # Character
@@ -187,6 +194,8 @@ typeof(y)
 function h(x::Int64)
     return x * 100
 end
+
+
 
 h(10) #Your function works with integers
 h(10.0) #But it will not work with floats. 

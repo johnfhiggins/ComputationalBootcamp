@@ -96,6 +96,8 @@ Passcode: N#u3=Es#) (Passcode: N#u3=Es#)
 - **Lecture 2:** Performance Optimization and Advanced Julia
   - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/lecture2.pdf)
   - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong2.jl)
+  - [Recording](https://uwmadison.zoom.us/rec/share/6ezG063zaKlhNXcFdC8hrTrqcq5e1fP2vVUQqfVjwJk8JoSyvb3gxHeMjcSTtERy.VGdbaLZOycmGeTBR?startTime=1718819966000
+Passcode: WdTY%6X3) (Passcode: WdTY%6X3)
 
 - [Homework 1:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework1.html) Due Wednesday July 26. 
 - Submit Link: https://classroom.github.com/a/ltOWDjoe
