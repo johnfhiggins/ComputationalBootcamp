@@ -24,7 +24,8 @@ Passcode: WdTY%6X3) (Passcode: WdTY%6X3)
 - **Lecture 3:** Numeric Optimization 
   - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/lecture3.pdf)
   - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong3.jl)
-
+  - [Recording](https://uwmadison.zoom.us/rec/share/jYcm3SOBsnEj06FwHa2m2Jek2hr73QkmxMQXgo8Ry4vMtqCzczYCwKV0kxxmk1or.Ih-2Up-8199PViCW 
+Passcode: e^=7teO9)(Passcode: e^=7teO9)
 - **Lecture 4:** Interpolation
   - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/lecture4.pdf)
   - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong4.jl)
