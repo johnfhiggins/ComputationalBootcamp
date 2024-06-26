@@ -70,7 +70,7 @@ This is not a real class, so you will not receive course credit, this will not s
 - Florian Oswald's teaching page (Julia and R) https://floswald.github.io/#teaching
 - Benjamin Vatter's Coding Primer (Python) https://benjaminvatter.com/uploads/coding_prep.pdf
 - Gentzkow and Shapiro's Practioner Guide (Best Practice for Coding and Data) https://web.stanford.edu/~gentzkow/research/CodeAndData.pdf
-- Derivate packages in Julia: https://juliadiff.org/ 
+- Derivative packages in Julia: https://juliadiff.org/ 
 - Distributed Computing Tutorials: https://enccs.github.io/julia-for-hpc/motivation/
 - Cameron Pfiffer's Julia Bootcamp: https://github.com/cpfiffer/julia-bootcamp-2022
 - Bogumił Kamiński's Julia Express http://bogumilkaminski.pl/files/julia_express.pdf
@@ -112,7 +112,8 @@ Passcode: e^=7teO9)(Passcode: e^=7teO9)
 - **Lecture 4:** Interpolation
   - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/lecture4.pdf)
   - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong4.jl)
-
+  - [Recording](https://uwmadison.zoom.us/rec/share/rW5TLo14oWjhilrIG3xmtfzYseequR-kDr7tAAAOw5owQmbXKonM-v60Dbjy79MO.GjYzdXzNRItE5HFi?startTime=1719424855000
+Passcode: AL72BZG!)
 
 - [Homework 2:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework2.html) Due Wednesday July 3. 
     - Submit Link: https://classroom.github.com/a/_scR5Vb7

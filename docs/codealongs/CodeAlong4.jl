@@ -13,6 +13,10 @@ using Optim, Interpolations, Plots, Polynomials, Parameters
 ################################################################################
 
 Runge(x) = 1 /(1 + 25*x^2)
+function Runge_2(x)
+    val = 1/(1+25*x^2)
+    return val
+end
 x_fine = collect(-1.0:0.01:1.0)
 x_coarse = collect(range(-1.0, length = 6, stop = 1.0))
 plot(x_fine, Runge.(x_fine))
@@ -38,7 +42,8 @@ plot(x_fine,
         runge_linear.(x_fine), 
         runge_spline.(x_fine)],
     linewidth=3)
-
+plot(x_fine, [Runge.(x_fine), runge_linear.(x_fine)])
+plot(x_fine, [Runge.(x_fine), runge_spline.(x_fine)])
 
 ################################################################################
 # Interpolation 
@@ -60,6 +65,11 @@ y_fine_interp = interp_y.(x_fine)
 plot(x_fine, [y_fine, y_fine_interp])
 scatter!(x, y, markersize = 4)
 
+x2=[0.1,0.5,1.0,1.5,2.0,5.0,10.1]
+y2 = log.(x2)
+interp_y2 = LinearInterpolation(x2,y2)
+y_interp = interp_y2.(x_fine)
+plot(x_fine, [y_fine, interp_y2.(x_fine)])
 ##Extrapolation
 log(11)
 interp_y(11) #This will give you an error because we haven't allowed for extrapolation
@@ -70,6 +80,14 @@ interp_y(11) #This will give you an error because we haven't allowed for extrapo
 interp_y_extra = LinearInterpolation(x,y,extrapolation_bc = Line()) #Flat()
 interp_y_extra(11)
 
+x2=[0.1,0.5,1.0,1.5,2.0,5.0,10.1,19.0]
+y2 = log.(x2)
+interp_y2 = LinearInterpolation(x2,y2)
+y_interp = interp_y2.(x_fine)
+x_fine_2  = collect(0.1:0.1:20.1)
+y_fine_2 = log.(x_fine_2)
+plot(x_fine_2, y_fine_2)
+scatter!([10.0,20.0], [log.(10.0),interp_y_extra(20)])
 #Extrapolation works okay when close to actual gird, but can struggle far outside grid
 log(11)
 interp_y_extra(11)
@@ -151,6 +169,8 @@ end
 contourf(grid_fine, grid_fine, z_interp) #slightly more jagged, but otherwise pretty good!
 contourf(grid_fine, grid_fine, (z_interp - z_fine)) #Difference
 contourf(grid_fine, grid_fine, (z_interp - z_fine)./z_fine) #Percent Difference
+surface(grid_fine,grid_fine,z_fine)
+surface!(grid_fine,grid_fine, z_interp)
 
 ################################################################################
 #####Better version of optimal growth
