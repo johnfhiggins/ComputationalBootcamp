@@ -30,7 +30,7 @@ Passcode: e^=7teO9)(Passcode: e^=7teO9)
   - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/lecture4.pdf)
   - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong4.jl)
   - [Recording](https://uwmadison.zoom.us/rec/share/rW5TLo14oWjhilrIG3xmtfzYseequR-kDr7tAAAOw5owQmbXKonM-v60Dbjy79MO.GjYzdXzNRItE5HFi?startTime=1719424855000
-Passcode: AL72BZG!)
+Passcode: AL72BZG!) (Passcode: AL72BZG!)
 
 - [Homework 2:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework2.html) Due Wednesday July 3. 
     - Submit Link: https://classroom.github.com/a/_scR5Vb7
