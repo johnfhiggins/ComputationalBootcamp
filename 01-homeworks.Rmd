@@ -8,6 +8,7 @@ Passcode: 7VM!5.Vn)
     - It would be best to install Julia and a code editor such as VS code before the first lecture. 
     - You will need to install Git and do the rest of the assignment before submitting Homework 1.
 - [Homework 1](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework1.html), Due Wednesday June 26.
+- [Homework 1 Solutions](https://johnfhiggins.github.io/ComputationalBootcamp/homework_solutions/Homework1_solutions.jl)
     - Submit Link: https://classroom.github.com/a/ltOWDjoe
 - [Homework 2:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework2.html) Due Wednesday July 3. 
     - Submit Link: https://classroom.github.com/a/_scR5Vb7
