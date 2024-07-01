@@ -17,7 +17,7 @@ using Random, Plots, Distributions, Statistics, Parameters
 # Working with arrays such as matrices can be quite slow because although the number of
 # dimensions is fixed, the size of each dimension can change. 
 
-using BenchmarkTools
+using BenchmarkTools, StaticArrays
 
 function add_up(M,R) # M is a 2x2 matrix, R is 2x1 vector 
     
@@ -82,12 +82,17 @@ function birthday(n, sims)
 end
 res_20= birthday(20, 100000)
 histogram(res_20)
+prob_same_bday = sum(res_20.<20.0)/length(res_20)
 
 res_50 = birthday(50, 100000) 
 histogram(res_50)
+prob_same_bday_50 = sum(res_50.<50.0)/length(res_50)
+
 
 res_70 = birthday(70, 100000)
 histogram(res_70)
+prob_same_bday = sum(res_70.<70.0)/length(res_70)
+
 
 
 
@@ -103,7 +108,7 @@ function Point_distance(sims)
     end
     return mean(results)
 end
-Point_distance(10000)
+Point_distance(100000)
 
 
 
@@ -143,6 +148,10 @@ function Compute_emax(prim, res, sims)
     utils, lfps, wages = zeros(2, sims), zeros(2, sims), zeros(2,sims)
 
     for s = 0:1 #loop over schooling levels
+    #or:
+    #s_grid = [0,1]
+    #for s_i =1:2
+        #s=s_grid[s_i]
         for i = 1:sims #loop over simulations
             ε = rand(dist) #draw shock and compute resultant wage
             wage = exp(β_0 + β_1*s + ε)
@@ -165,8 +174,15 @@ prim, res = Solve_model(100) #run the code
 res.ewage[2] / res.ewage[1] 
 res.ewage_obs[2] / res.ewage_obs[1]
 
+### Halton sequences
+using HaltonSequences
+using Plots
+B=1000
+r = rand(B)
+histogram(r)
 
-
+h = Halton(3)[1:B]
+histogram(h)
 
 ################################################################################
 # Quadrature
@@ -194,7 +210,7 @@ F(1) - F(-1)
 # Here we will approximate the expection E[f(x)] when x is distributed according to standard normal
 
 #Get nodes and weights
-x,w = gausshermite(3)
+x,w = gausshermite(9)
 #Change of variable: https://en.wikipedia.org/wiki/Gauss-Hermite_quadrature
 g_tilde(x,f) = f(sqrt(2)x)/sqrt(π)
 
@@ -231,6 +247,7 @@ function bigibbs(T, rho)
 end
 
 x,y = bigibbs(100000, 0.8)
+
 x = x[10000:end];
 y = y[10000:end];
 using Statistics
