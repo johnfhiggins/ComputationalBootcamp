@@ -47,6 +47,8 @@ Passcode: 6uC#jp$!) (Passcode: 6uC#jp$!)
 - **Lecture 6:** Parallelization and UW Resources
   - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/lecture6.pdf)
   - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong6.jl)
+  - [Recording](https://uwmadison.zoom.us/rec/share/ZrcL3xIp5uBcK-AfjcMx7XV7cWhrA1O_6MAbrAhqZqc51tUShj6uZQXeOvEzz6Z4.3els7orDyHwHHDpx?startTime=1720029525000
+Passcode: vLWzV7D+) (Passcode: vLWzV7D+)
 
 - [Homework 3:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework3.html) Due Wednesday July 10. 
     - Submit Link: https://classroom.github.com/a/7-WWUk4Q
