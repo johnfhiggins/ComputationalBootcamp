@@ -118,6 +118,7 @@ Passcode: e^=7teO9)(Passcode: e^=7teO9)
 Passcode: AL72BZG!) (Passcode: AL72BZG!)
 
 - [Homework 2:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework2.html) Due Wednesday July 3. 
+- [Homework 2 Solutions](https://johnfhiggins.github.io/ComputationalBootcamp/homework_solutions/Homework2_solutions.jl)
     - Submit Link: https://classroom.github.com/a/_scR5Vb7
 
 ### Week 3: Advanced Topics
