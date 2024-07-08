@@ -59,6 +59,8 @@ Passcode: vLWzV7D+) (Passcode: vLWzV7D+)
 - **Lecture 7:** Dynamic Programming
   - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/lecture7.pdf)
   - [Code-along](https://johnfhiggins.github.io/ComputationalBootcamp/codealongs/CodeAlong7.jl)
+  - [Recording](https://uwmadison.zoom.us/rec/share/yoRU89Hb8PTz285SG-mLRUgoz7k00D0-pYjXmzeRQ2jKoKNGU_g4BtfIwy9R3Z-i.Hn07TvoMSPN-JLVj 
+Passcode: .kiO2u0e) (Passcode: .kiO2u0e)
 
 - **Lecture 8:** Economic Applications
   - [Slides](https://johnfhiggins.github.io/ComputationalBootcamp/lectures/lecture8.pdf)
