@@ -52,6 +52,7 @@ Passcode: 6uC#jp$!) (Passcode: 6uC#jp$!)
 Passcode: vLWzV7D+) (Passcode: vLWzV7D+)
 
 - [Homework 3:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework3.html) Due Wednesday July 10. 
+- [Homework 3 Solutions](https://johnfhiggins.github.io/ComputationalBootcamp/homework_solutions/Homework3_solutions.jl)
     - Submit Link: https://classroom.github.com/a/7-WWUk4Q
 
 ### Week 4: Dynamic Programming
@@ -71,6 +72,7 @@ Passcode: .kiO2u0e) (Passcode: .kiO2u0e)
 Passcode: 5O?*y3fH) (Passcode: 5O?*y3fH)
 
 - [Homework 4:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework4.html) Due Wednesday July 17. 
+- [Homework 4 Solutions](https://johnfhiggins.github.io/ComputationalBootcamp/homework_solutions/Homework3_solutions.jl)
   - Submit Link:https://classroom.github.com/a/4CBmQTaW
 
 

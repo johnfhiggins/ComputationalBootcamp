@@ -15,7 +15,6 @@ addprocs(10) # Add 10 workers
 @everywhere using StatsBase
 
 #Load Data set on all cores
-@everywhere cd("C:/Users/kghun/Downloads")
 @everywhere df = CSV.read("lwage.csv", DataFrame)
 @everywhere df.exp_sq = df.exp .^2
 

@@ -18,7 +18,7 @@ using StatsBase
 ################################################################################
 
 #Set working directory where data is
-cd("C:/Users/kghun/Downloads")
+
 
 #Read in dataset 
 df = CSV.read("lwage.csv", DataFrame)
