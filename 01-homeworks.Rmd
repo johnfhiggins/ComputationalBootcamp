@@ -16,5 +16,5 @@ Passcode: 7VM!5.Vn)
 - [Homework 3 Solutions](https://johnfhiggins.github.io/ComputationalBootcamp/homework_solutions/Homework3_solutions.jl)
     - Submit Link: https://classroom.github.com/a/7-WWUk4Q
 - [Homework 4](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework4.html), Due July 17.
-- [Homework 4 Solutions](https://johnfhiggins.github.io/ComputationalBootcamp/homework_solutions/Homework3_solutions.jl)
+- [Homework 4 Solutions](https://johnfhiggins.github.io/ComputationalBootcamp/homework_solutions/Homework4_solutions.jl)
     - Submit Link: https://classroom.github.com/a/4CBmQTaW
