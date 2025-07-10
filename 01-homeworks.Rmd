@@ -1,20 +1,9 @@
 # Homeworks
 
+- It would be best to install Julia and a code editor such as VS code before the first lecture. 
 
-- [Homework 0](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework0.html), No Due Date
-- Submit link: https://classroom.github.com/a/EbiCcuus
-    - I made the following recording to help walk you through the set-up [(link)](https://uwmadison.zoom.us/rec/share/ADo9Lr9x7Qgs8ICnasbZ2H7mW7P61HjuAgHwVb3_yHUaq9Mrx4fd2sloWtmUCt3I.plNcH2QGUGkzn0Rm 
-Passcode: 7VM!5.Vn)
-    - It would be best to install Julia and a code editor such as VS code before the first lecture. 
-    - You will need to install Git and do the rest of the assignment before submitting Homework 1.
-- [Homework 1](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework1.html), Due Wednesday June 26.
-- [Homework 1 Solutions](https://johnfhiggins.github.io/ComputationalBootcamp/homework_solutions/Homework1_solutions.jl)
-    - Submit Link: https://classroom.github.com/a/ltOWDjoe
-- [Homework 2:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework2.html) Due Wednesday July 3. 
-    - Submit Link: https://classroom.github.com/a/_scR5Vb7
-- [Homework 3:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework3.html) Due Wednesday July 10. 
-- [Homework 3 Solutions](https://johnfhiggins.github.io/ComputationalBootcamp/homework_solutions/Homework3_solutions.jl)
-    - Submit Link: https://classroom.github.com/a/7-WWUk4Q
-- [Homework 4](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework4.html), Due July 17.
-- [Homework 4 Solutions](https://johnfhiggins.github.io/ComputationalBootcamp/homework_solutions/Homework4_solutions.jl)
-    - Submit Link: https://classroom.github.com/a/4CBmQTaW
+- [Homework 1](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework1.html), Due Wednesday August 13.
+
+- [Homework 2:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework2.html) Due Wednesday August 20. 
+- [Homework 3:](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework3.html) Due Wednesday August 27. 
+- [Homework 4](https://johnfhiggins.github.io/ComputationalBootcamp/homeworks/homework4.html), Due Wednesday September 3.
